@@ -1,8 +1,8 @@
-# This is your rocks.nvim plugins declaration file.
-# Here is a small yet pretty detailed example on how to use it:
-#
-# [plugins]
-# nvim-treesitter = "semver_version"  # e.g. "1.0.0"
+# ref: https://github.com/NTBBloodbath/nvim/blob/38c58ea0684f6868bd3afe1528642cbb33eb0bd4/rocks.toml#L4
+# rocks-config
+[config]
+auto_setup = true
+colorscheme = "kanagawa-wave"
 
 # List of non-Neovim rocks.
 # This includes things like `toml` or other lua packages.
@@ -16,10 +16,24 @@
 "rocks-config.nvim" = "2.0.0"
 "rocks-dev.nvim" = "1.2.3"
 "rocks-treesitter.nvim" = "scm"
+"rocks-lazy.nvim" = "scm"
+"oil.nvim" = "2.10.0"
+"neoscroll.nvim" = "0.2.0"
+"nightfox.nvim" = "3.9.3"
+"todo-comments.nvim" = "1.2.0"
 
+[plugins."accelerated-jk.nvim"]
+git = "github:rainbowhxch/accelerated-jk.nvim"
+opt = true
+
+# colorschemes
 [plugins."kanagawa.nvim"]
 version = "scm"
 opt = true
+colorscheme = [
+  "kanagawa",
+  "kanagawa-wave",
+]
 
 [plugins."github-nvim-theme"]
 version = "1.0.2"
