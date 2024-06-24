@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PRODUCT_NAME="nvim_new"
+PRODUCT_NAME="nvim-rocks"
 DEFAULT_REMOTE="origin"
 DEFAULT_BRANCH="master"
 TODAY=$(date +'%Y%m%d')

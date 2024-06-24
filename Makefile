@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := help
 
 today   = $(shell date "+%Y%m%d")
-product_name = nvim_new
+product_name = nvim-new
 gpg_pub_key = CCAA9E0638DF9088BB624BC37C0F8AD3FB3938FC
 
 ## Create a patch and copy it to windows
