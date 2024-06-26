@@ -11,62 +11,111 @@ colorscheme = "kanagawa-wave"
 # List of Neovim plugins to install alongside their versions.
 # If the plugin name contains a dot then you must add quotes to the key name!
 [plugins]
+# NOTE: nvim-neorocks officials
 "rocks.nvim" = "2.31.3"
 "rocks-git.nvim" = "1.5.1"
 "rocks-config.nvim" = "2.0.0"
 "rocks-dev.nvim" = "1.2.3"
 "rocks-treesitter.nvim" = "scm"
 "rocks-lazy.nvim" = "scm"
+
+# NOTE: Config is zero-config
 "oil.nvim" = "2.10.0"
-"neoscroll.nvim" = "0.2.0"
-"nightfox.nvim" = "3.9.3"
+"tokyonight.nvim" = "3.0.1"
+
+# NOTE: Config is in-toml
+"2048.nvim" = {version="2.8.2",cmd = "Play2048"}
+"15puzzle.nvim" = {version = "1.4.1", cmd = "Play15puzzle"}
+
+# NOTE: Config is lua/plugins
+alpha-nvim = "scm"
 neorg = "8.7.1"
 neorg-telescope = "1.1.0"
-"monokai.nvim" = "scm"
-"lush.nvim" = "scm"
-"screenkey.nvim" = "2.1.0"
-"toggleterm.nvim" = "2.11.0"
-"2048.nvim" = "2.8.2"
-"glow.nvim" = "0.2.0"
-"tokyonight.nvim" = "3.0.1"
-"trouble.nvim" = "3.4.3"
-"which-key.nvim" = "2.1.0"
-"nui.nvim" = "0.3.0"
-"fidget.nvim" = "1.4.1"
-"lazygit.nvim" = "scm"
-"yazi.nvim" = "master"
-"plenary.nvim" = "scm"
-"nvim-tree.lua" = "1.4.0"
-nvim-web-devicons = "0.100"
-"lspsaga.nvim" = "scm"
-"lualine.nvim" = "scm"
-"lspkind.nvim" = "scm"
-"15puzzle.nvim" = "1.4.1"
-treesj = "scm"
-"schemastore.nvim" = "0.2.0"
-"marks.nvim" = "scm"
-"sqlite.lua" = "1.2.2"
-nvim-surround = "2.1.5"
-"indent-blankline.nvim" = "3.6.3"
-nvim-notify = "3.13.5"
-"no-neck-pain.nvim" = "1.14.0"
-"dressing.nvim" = "2.2.2"
-"ccc.nvim" = "1.6.0"
-"package-info.nvim" = "2.0"
-nvim-autopairs = "scm"
-nvim-ts-autotag = "scm"
-alpha-nvim = "scm"
+"noice.nvim" = "4.3.0"
 "todo-comments.nvim" = "1.2.0"
-# TODO: setting
+
+# FIX: need settings
+#"neoscroll.nvim" = "0.2.0"
+#"nightfox.nvim" = "3.9.3"
+#"monokai.nvim" = "scm"
+#"lush.nvim" = "scm"
+#"screenkey.nvim" = "2.1.0"
+#"toggleterm.nvim" = "2.11.0"
+#"glow.nvim" = "0.2.0"
+#"trouble.nvim" = "3.4.3"
+#"which-key.nvim" = "2.1.0"
+#"fidget.nvim" = "1.4.1"
+#"lazygit.nvim" = "scm"
+#"yazi.nvim" = "master"
+#"plenary.nvim" = "scm"
+#"nvim-tree.lua" = "1.4.0"
+#nvim-web-devicons = "0.100"
+#"lspsaga.nvim" = "scm"
+#"lspkind.nvim" = "scm"
+#treesj = "scm"
+#"schemastore.nvim" = "0.2.0"
+#"marks.nvim" = "scm"
+#"sqlite.lua" = "1.2.2"
+#nvim-surround = "2.1.5"
+#"indent-blankline.nvim" = "3.6.3"
+#nvim-notify = "3.13.5"
+#"no-neck-pain.nvim" = "1.14.0"
+#"dressing.nvim" = "2.2.2"
+#"ccc.nvim" = "1.6.0"
+#"package-info.nvim" = "2.0"
+#nvim-autopairs = "scm"
+#nvim-ts-autotag = "scm"
 #nvim-lspconfig = "0.1.8"
 #"pantran.nvim" = "scm"
 #"neoconf.nvim" = "1.2.2"
-"noice.nvim" = "4.3.0"
 #"obsidian.nvim" = "3.8.0"
 
 [plugins."accelerated-jk.nvim"]
 git = "github:rainbowhxch/accelerated-jk.nvim"
 opt = true
+
+[plugins."dial.nvim"]
+git = "github:monaqa/dial.nvim"
+opt = true
+
+[plugins."strat-hero.nvim"]
+git = "github:willothy/strat-hero.nvim"
+opt = true
+cmd = "StratHero"
+
+[plugins."vim-ambiwidth"]
+git = "github:rbtnn/vim-ambiwidth"
+
+[plugins."lualine.nvim"]
+version = "scm"
+event = [
+  "BufReadPre",
+  "BufNewFile",
+]
+
+[plugins."vim-cargo-make"]
+git = "github:nastevens/vim-cargo-make"
+ft = "cargo-make"
+#local dependencies = {
+#    "cespare/vim-toml",
+#    "nastevens/vim-duckscript",
+#}
+
+[plugins."vim-just"]
+git = "github:NoahTheDuke/vim-just"
+ft = "just"
+
+[plugins.vim-kitty]
+git = "github:fladson/vim-kitty"
+ft = "kitty"
+
+[plugins."vim-quickrun"]
+git = "github:thinca/vim-quickrun"
+cmd = "QuickRun"
+
+[plugins."vimdoc-ja"]
+git = "github:vim-jp/vimdoc-ja"
+keys = { lhs = "h", mode = "c", desc = "open [H]elp" }
 
 # colorschemes
 [plugins."kanagawa.nvim"]
@@ -79,8 +128,4 @@ colorscheme = [
 
 [plugins."github-nvim-theme"]
 version = "1.0.2"
-opt = true
-
-[plugins."dial.nvim"]
-git = "github:monaqa/dial.nvim"
 opt = true
