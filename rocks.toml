@@ -18,114 +18,93 @@ colorscheme = "kanagawa-wave"
 "rocks-dev.nvim" = "1.2.3"
 "rocks-treesitter.nvim" = "scm"
 "rocks-lazy.nvim" = "scm"
+# NOTE: zero-config plugins
+"dressing.nvim" = "2.2.2"
 
-# NOTE: Config is zero-config
-"oil.nvim" = "2.10.0"
-"tokyonight.nvim" = "3.0.1"
+[plugins."kanagawa.nvim"]
+version = "scm"
+colorscheme = [
+  "kanagawa",
+  "kanagawa-dragon",
+  "kanagawa-lotus",
+  "kanagawa-wave",
+]
 
-# NOTE: Config is in-toml
-"2048.nvim" = {version="2.8.2",cmd = "Play2048"}
-"15puzzle.nvim" = {version = "1.4.1", cmd = "Play15puzzle"}
-
-# NOTE: Config is lua/plugins
-alpha-nvim = "scm"
-neorg = "8.7.1"
-neorg-telescope = "1.1.0"
-"noice.nvim" = "4.3.0"
-"todo-comments.nvim" = "1.2.0"
-
-# FIX: need settings
-#"neoscroll.nvim" = "0.2.0"
-#"nightfox.nvim" = "3.9.3"
-#"monokai.nvim" = "scm"
-#"lush.nvim" = "scm"
-#"screenkey.nvim" = "2.1.0"
-#"toggleterm.nvim" = "2.11.0"
-#"glow.nvim" = "0.2.0"
-#"trouble.nvim" = "3.4.3"
-#"which-key.nvim" = "2.1.0"
-#"fidget.nvim" = "1.4.1"
-#"lazygit.nvim" = "scm"
-#"yazi.nvim" = "master"
-#"plenary.nvim" = "scm"
-#"nvim-tree.lua" = "1.4.0"
-#nvim-web-devicons = "0.100"
-#"lspsaga.nvim" = "scm"
-#"lspkind.nvim" = "scm"
-#treesj = "scm"
-#"schemastore.nvim" = "0.2.0"
-#"marks.nvim" = "scm"
-#"sqlite.lua" = "1.2.2"
-#nvim-surround = "2.1.5"
-#"indent-blankline.nvim" = "3.6.3"
-#nvim-notify = "3.13.5"
-#"no-neck-pain.nvim" = "1.14.0"
-#"dressing.nvim" = "2.2.2"
-#"ccc.nvim" = "1.6.0"
-#"package-info.nvim" = "2.0"
-#nvim-autopairs = "scm"
-#nvim-ts-autotag = "scm"
-#nvim-lspconfig = "0.1.8"
-#"pantran.nvim" = "scm"
-#"neoconf.nvim" = "1.2.2"
-#"obsidian.nvim" = "3.8.0"
+[plugins."auto-save.nvim"]
+version = "scm"
+cmd = "ASToggle"
+opt = true
 
 [plugins."accelerated-jk.nvim"]
 git = "github:rainbowhxch/accelerated-jk.nvim"
+event = "BufRead"
+keys = [
+  {lhs = "j", rhs = "<Plug>(accelerated_jk_gj)", mode = "n", desc = "fast j" },
+  {lhs = "k", rhs = "<Plug>(accelerated_jk_gk)", mode = "n", desc = "fast k" },
+]
 opt = true
 
-[plugins."dial.nvim"]
-git = "github:monaqa/dial.nvim"
+[plugins."calendar-vim"]
+git = "github:mattn/calendar-vim"
+cmd = "Calendar"
 opt = true
 
-[plugins."strat-hero.nvim"]
-git = "github:willothy/strat-hero.nvim"
-opt = true
-cmd = "StratHero"
+[plugins."vimdoc-ja"]
+git = "github:vim-jp/vimdoc-ja"
+# TODO: Fix it
+#keys = [
+#  { lhs = "h", mode = "c", desc = "open [H]elp" },
+#]
+#opt = true
 
 [plugins."vim-ambiwidth"]
 git = "github:rbtnn/vim-ambiwidth"
-
-[plugins."lualine.nvim"]
-version = "scm"
-event = [
-  "BufReadPre",
-  "BufNewFile",
-]
-
-[plugins."vim-cargo-make"]
-git = "github:nastevens/vim-cargo-make"
-ft = "cargo-make"
-#local dependencies = {
-#    "cespare/vim-toml",
-#    "nastevens/vim-duckscript",
-#}
+#opt = true
 
 [plugins."vim-just"]
 git = "github:NoahTheDuke/vim-just"
 ft = "just"
+opt = true
 
-[plugins.vim-kitty]
+[plugins."vim-kitty"]
 git = "github:fladson/vim-kitty"
 ft = "kitty"
+opt = true
 
 [plugins."vim-quickrun"]
 git = "github:thinca/vim-quickrun"
 cmd = "QuickRun"
-
-[plugins."vimdoc-ja"]
-git = "github:vim-jp/vimdoc-ja"
-keys = { lhs = "h", mode = "c", desc = "open [H]elp" }
-
-# colorschemes
-[plugins."kanagawa.nvim"]
-version = "scm"
 opt = true
-colorscheme = [
-  "kanagawa",
-  "kanagawa-wave",
+
+[plugins."ron.vim"]
+git = "github:ron-rs/ron.vim"
+ft = "ron"
+opt = true
+
+[plugins."kdl.vim"]
+git = "github:imsnif/kdl.vim"
+ft = "kdl"
+opt = true
+
+[plugins."chezmoi.vim"]
+git = "github:alker0/chezmoi.vim"
+# this plugin DO NOT lazy loading
+# see: https://github.com/alker0/chezmoi.vim#install
+#opt = true
+
+[plugins."align.nvim"]
+git = "github:Vonr/align.nvim"
+event = "BufRead"
+opt = true
+
+[plugins."transparent.nvim"]
+git = "github:xiyaowong/transparent.nvim"
+cmd = [
+    "TransparentEnable",
+    "TransparentDisable",
+    "TransparentToggle",
 ]
-
-[plugins."github-nvim-theme"]
-version = "1.0.2"
 opt = true
+
+[plugins."satellite.nvim"]
+git = "github:lewis6991/satellite.nvim"

@@ -1,5 +1,4 @@
 # telescope plugins
-#nvim-telescope/telescope.nvim
 #danielfalk/smart-open.nvim
 #fdschmidt93/telescope-egrepify.nvim
 #xiyaowong/telescope-emoji.nvim
