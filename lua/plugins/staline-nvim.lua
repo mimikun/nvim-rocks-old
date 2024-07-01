@@ -1,9 +1,8 @@
----@type table
-local events = { "BufReadPre", "BufNewFile" }
+vim.opt.laststatus = 2
+vim.opt.showtabline = 2
+vim.opt.termguicolors = true
 
----status line: staline
----@type table
-local staline_opts = {
+require("staline").setup({
     defaults = {
         expand_null_ls = false,
         -- TODO: Use utils/icons.lua
@@ -72,11 +71,9 @@ local staline_opts = {
         -- TODO: Use utils/icons.lua
         Hint = "",
     },
-}
+})
 
----buffer line: stabline
----@type table
-local stabline_opts = {
+require("stabline").setup({
     style = "bar",
     -- TODO: Use utils/icons.lua
     stab_left = "┃",
@@ -90,23 +87,4 @@ local stabline_opts = {
     numbers = function(bufn, n)
         return "*" .. n .. " "
     end,
-}
-
----@type LazySpec
-local spec = {
-    "tamton-aquib/staline.nvim",
-    --lazy = false,
-    event = events,
-    init = function()
-        vim.opt.laststatus = 2
-        vim.opt.showtabline = 2
-        vim.opt.termguicolors = true
-    end,
-    config = function()
-        require("staline").setup(staline_opts)
-        require("stabline").setup(stabline_opts)
-    end,
-    cond = false,
-}
-
-return spec
+})

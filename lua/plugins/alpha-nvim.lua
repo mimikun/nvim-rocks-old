@@ -61,7 +61,7 @@ local buttons = {
     position = "center",
 }
 
-local config = {
+alpha.setup({
     layout = {
         { type = "padding", val = 1 },
         header,
@@ -76,10 +76,9 @@ local config = {
                 pattern = "*",
                 group = "alpha_temp",
                 callback = function()
-                    require("alpha").redraw()
+                    alpha.redraw()
                 end,
             })
         end,
     },
-}
-alpha.setup(config)
+})

@@ -1,22 +1,4 @@
----@type table
-local cmds = {
-    "OverseerOpen",
-    "OverseerClose",
-    "OverseerToggle",
-    "OverseerSaveBundle",
-    "OverseerLoadBundle",
-    "OverseerDeleteBundle",
-    "OverseerRunCmd",
-    "OverseerRun",
-    "OverseerInfo",
-    "OverseerBuild",
-    "OverseerQuickAction",
-    "OverseerTaskAction",
-    "OverseerClearCache",
-}
-
----@type table
-local opts = {
+require("overseer").setup({
     -- Default task strategy
     strategy = "terminal",
     -- Template modules to load
@@ -213,15 +195,4 @@ local opts = {
             level = vim.log.levels.WARN,
         },
     },
-}
-
----@type LazySpec
-local spec = {
-    "stevearc/overseer.nvim",
-    --lazy = false,
-    cmd = cmds,
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+})

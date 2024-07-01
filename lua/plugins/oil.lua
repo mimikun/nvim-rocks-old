@@ -1,11 +1,7 @@
----@type LazySpec[]
-local dependencies = {
-    "nvim-tree/nvim-web-devicons",
-    "refractalize/oil-git-status.nvim",
-}
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
----@type table
-local opts = {
+require("oil").setup({
     -- Oil will take over directory buffers (e.g. `vim .` or `:e src/`)
     -- Set to false if you still want to use netrw.
     default_file_explorer = true,
@@ -167,23 +163,5 @@ local opts = {
     ssh = {
         border = "rounded",
     },
-}
-
----@type LazySpec
-local spec = {
-    "stevearc/oil.nvim",
-    lazy = false,
-    cmd = "Oil",
-    dependencies = dependencies,
-    init = function()
-        vim.g.loaded_netrw = 1
-        vim.g.loaded_netrwPlugin = 1
-    end,
-    config = function()
-        require("oil").setup(opts)
-        require("oil-git-status").setup({})
-    end,
-    --cond = false,
-}
-
-return spec
+})
+--require("oil-git-status").setup({})

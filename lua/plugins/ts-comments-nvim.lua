@@ -1,5 +1,4 @@
----@type table
-local opts = {
+require("ts-comments").setup({
     lang = {
         astro = "<!-- %s -->",
         axaml = "<!-- %s -->",
@@ -59,16 +58,4 @@ local opts = {
         xaml = "<!-- %s -->",
         xml = "<!-- %s -->",
     },
-}
-
----@type LazySpec
-local spec = {
-    "folke/ts-comments.nvim",
-    --lazy = false,
-    enabled = vim.fn.has("nvim-0.10.0") == 1,
-    event = "VeryLazy",
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+})

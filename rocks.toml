@@ -18,8 +18,10 @@ colorscheme = "kanagawa-wave"
 "rocks-dev.nvim" = "1.2.3"
 "rocks-treesitter.nvim" = "scm"
 "rocks-lazy.nvim" = "scm"
+"rocks-edit.nvim" = "scm"
 # NOTE: zero-config plugins
 "dressing.nvim" = "2.2.2"
+"neoscroll.nvim" = "0.2.0"
 
 [plugins."kanagawa.nvim"]
 version = "scm"
@@ -29,6 +31,7 @@ colorscheme = [
   "kanagawa-lotus",
   "kanagawa-wave",
 ]
+#opt = true
 
 [plugins."auto-save.nvim"]
 version = "scm"
@@ -108,3 +111,214 @@ opt = true
 
 [plugins."satellite.nvim"]
 git = "github:lewis6991/satellite.nvim"
+#opt = true
+
+# NOTE: cond = false now
+#[plugins."modeline.nvim"]
+#git = "github:nvimdev/modeline.nvim"
+#event = ["BufReadPre", "BufNewFile"]
+#opt = true
+
+[plugins."modes.nvim"]
+git = "github:mvllow/modes.nvim"
+tag = "v0.2.0"
+event = "BufRead"
+opt = true
+
+[plugins."no-neck-pain.nvim"]
+version = "1.14.1"
+cmd = [
+    "NoNeckPain",
+    "NoNeckPainResize",
+    "NoNeckPainToggleLeftSide",
+    "NoNeckPainToggleRightSide",
+    "NoNeckPainWidthUp",
+    "NoNeckPainWidthDown",
+]
+opt = true
+
+[plugins.nvim-autopairs]
+version = "scm"
+event = "InsertEnter"
+opt = true
+
+[plugins.nvim-cursorline]
+version = "scm"
+opt = true
+
+[plugins.nvim-hlslens]
+git = "github:kevinhwang91/nvim-hlslens"
+keys = [
+  {lhs = "<leader>l", desc ="run `:nohlsearch` and export results to quickfix"},
+]
+#opt = true
+
+[plugins.nvim-insx]
+git = "github:hrsh7th/nvim-insx"
+#opt = true
+
+[plugins."overseer.nvim"]
+version = "1.4.0"
+cmd = [
+    "OverseerOpen",
+    "OverseerClose",
+    "OverseerToggle",
+    "OverseerSaveBundle",
+    "OverseerLoadBundle",
+    "OverseerDeleteBundle",
+    "OverseerRunCmd",
+    "OverseerRun",
+    "OverseerInfo",
+    "OverseerBuild",
+    "OverseerQuickAction",
+    "OverseerTaskAction",
+    "OverseerClearCache",
+]
+opt = true
+
+[plugins."pantran.nvim"]
+version = "scm"
+keys = [
+{ lhs = "tr", desc = "Run Translate" },
+{ lhs = "trr", desc = "Run Translate" },
+]
+cmd = "Pantran"
+opt = true
+
+[plugins."persistence.nvim"]
+version = "2.0.0"
+event = "BufReadPre"
+opt = true
+
+[plugins."15puzzle.nvim"]
+version = "1.4.1"
+cmd = "Play15puzzle"
+opt = true
+
+[plugins."screenkey.nvim"]
+version = "2.1.0"
+cmd = "Screenkey"
+opt = true
+
+# NOTE: cond = false now
+#[plugins."staline.nvim"]
+#version = "scm"
+#event = [ "BufReadPre", "BufNewFile" ]
+#opt = true
+
+[plugins."ts-comments.nvim"]
+version = "1.2.0"
+event = "DeferredUIEnter"
+opt = true
+
+[plugins."which-key.nvim"]
+version = "2.1.0"
+event = "DeferredUIEnter"
+opt = true
+
+# NOTE: cond = false now
+#[plugins."windline.nvim"]
+#version = "1.1.0"
+#event = [ "BufReadPre", "BufNewFile"]
+#opt = true
+
+[plugins."zen-mode.nvim"]
+version = "1.3.0"
+cmd = "ZenMode"
+opt = true
+
+[plugins."nvim-markdown"]
+git = "github:ixru/nvim-markdown"
+ft = "markdown"
+opt = true
+
+[plugins."pandoc.nvim"]
+git = "github:aspeddro/pandoc.nvim"
+opt = true
+
+[plugins."scope.nvim"]
+git = "github:tiagovla/scope.nvim"
+cmd = "ScopeMoveBuf"
+opt = true
+
+[plugins."sidebar.nvim"]
+git = "github:sidebar-nvim/sidebar.nvim"
+cmd = [
+    "SidebarNvimToggle",
+    "SidebarNvimClose",
+    "SidebarNvimOpen",
+    "SidebarNvimUpdate",
+    "SidebarNvimResize",
+    "SidebarNvimFocus",
+]
+opt = true
+
+[plugins."strat-hero.nvim"]
+git = "github:willothy/strat-hero.nvim"
+cmd = "StratHero"
+opt = true
+
+[plugins."template.nvim"]
+git = "github:nvimdev/template.nvim"
+cmd = "Template"
+#opt = true
+
+[plugins."typos.nvim"]
+git = "github:poljar/typos.nvim"
+event = "BufRead"
+opt = true
+
+[plugins."wezterm.nvim"]
+git = "github:mimikun/wezterm.nvim"
+dir = "~/ghq/github.com/mimikun/dev-plugins/wezterm.nvim"
+#cmd = "WeztermSpawn"
+#opt = true
+
+[plugins."SmoothCursor.nvim"]
+git = "github:gen740/SmoothCursor.nvim"
+event = "BufRead"
+opt = true
+
+[plugins.alpha-nvim]
+version = "scm"
+event = "VimEnter"
+opt = true
+
+[plugins."bufferline.nvim"]
+version = "4.6.1"
+#dependencies = { "nvim-tree/nvim-web-devicons" },
+event = ["BufReadPre", "BufNewFile"]
+cmd = [
+    "BufferLineTabRename",
+    "BufferLineGroupClose",
+    "BufferLineGroupToggle",
+    "BufferLineTogglePin",
+    "BufferLineSortByExtension",
+    "BufferLineSortByDirectory",
+    "BufferLineSortByTabs",
+    "BufferLineCycleNext",
+    "BufferLineCyclePrev",
+    "BufferLineCloseRight",
+    "BufferLineCloseLeft",
+    "BufferLineCloseOthers",
+    "BufferLinePick",
+    "BufferLineGoToBuffer",
+    "BufferLineMoveNext",
+    "BufferLineMovePrev",
+]
+opt = true
+
+[plugins."oil.nvim"]
+version = "2.10.0"
+cmd = "Oil"
+opt = true
+
+#[plugins."oil-git-status.nvim"]
+#git = "github:refractalize/oil-git-status.nvim"
+##opt = true
+#
+#[bundles.oil]
+#items = [
+#"oil.nvim",
+#"oil-git-status.nvim",
+#]

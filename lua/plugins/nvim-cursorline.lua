@@ -1,5 +1,4 @@
----@type table
-local opts = {
+require("nvim-cursorline").setup({
     cursorline = {
         enable = true,
         timeout = 1000,
@@ -10,14 +9,4 @@ local opts = {
         min_length = 3,
         hl = { underline = true },
     },
-}
-
----@type LazySpec
-local spec = {
-    "yamatsum/nvim-cursorline",
-    --lazy = false,
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+})
