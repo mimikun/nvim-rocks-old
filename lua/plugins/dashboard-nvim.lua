@@ -1,11 +1,3 @@
----@type table
-local cmds = {
-    "Dashboard",
-    "DbProjectDelete",
-    "DashboardUpdateFooter",
-}
-
----@type table
 local config = {
     hyper = {
         header = nil,
@@ -27,8 +19,7 @@ local config = {
     },
 }
 
----@type table
-local opts = {
+require("dashboard").setup({
     theme = "hyper",
     disable_move = false,
     shortcut_type = "number",
@@ -45,19 +36,4 @@ local opts = {
         file_width = 0,
     },
 }
-
----@type LazySpec
-local spec = {
-    "nvimdev/dashboard-nvim",
-    lazy = false,
-    cmd = cmds,
-    event = "VimEnter",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = opts,
-    config = function(_, opts)
-        require("dashboard").setup(opts)
-    end,
-    cond = false,
-}
-
-return spec
+)

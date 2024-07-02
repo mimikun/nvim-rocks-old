@@ -18,7 +18,7 @@ colorscheme = "kanagawa-wave"
 "rocks-dev.nvim" = "1.2.3"
 "rocks-treesitter.nvim" = "scm"
 "rocks-lazy.nvim" = "scm"
-"rocks-edit.nvim" = "scm"
+#"rocks-edit.nvim" = "scm"
 # NOTE: zero-config plugins
 "dressing.nvim" = "2.2.2"
 "neoscroll.nvim" = "0.2.0"
@@ -271,13 +271,6 @@ opt = true
 [plugins."wezterm.nvim"]
 git = "github:mimikun/wezterm.nvim"
 dir = "~/ghq/github.com/mimikun/dev-plugins/wezterm.nvim"
-#cmd = "WeztermSpawn"
-#opt = true
-
-[plugins."SmoothCursor.nvim"]
-git = "github:gen740/SmoothCursor.nvim"
-event = "BufRead"
-opt = true
 
 [plugins.alpha-nvim]
 version = "scm"
@@ -313,6 +306,7 @@ version = "2.10.0"
 cmd = "Oil"
 opt = true
 
+## TODO:
 #[plugins."oil-git-status.nvim"]
 #git = "github:refractalize/oil-git-status.nvim"
 ##opt = true
@@ -322,3 +316,33 @@ opt = true
 #"oil.nvim",
 #"oil-git-status.nvim",
 #]
+
+## NOTE: cond = false now
+#[plugins.dashboard-nvim]
+#version = "scm"
+#cmd = [
+#    "Dashboard",
+#    "DbProjectDelete",
+#    "DashboardUpdateFooter",
+#]
+#event = "VimEnter"
+##opt = true
+##dependencies = { "nvim-tree/nvim-web-devicons" },
+
+## NOTE: cond = false now
+#[plugins."dial.nvim"]
+#version = "0.4.0"
+#event = "VimEnter"
+#keys = [
+#    { lhs = "<C-a>", desc = "<C-a> increment" },
+#    { lhs = "<C-x>", desc = "<C-x> decrement" },
+#]
+#opt = true
+
+[plugins."feline.nvim"]
+version = "1.6.2"
+
+[plugins."smoothcursor.nvim"]
+version = "scm"
+event = "BufRead"
+opt = true

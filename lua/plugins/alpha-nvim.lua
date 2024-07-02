@@ -10,7 +10,7 @@ local quick_links = icons.ui.List .. "Quick links"
 ---@type string
 local new_file = icons.ui.NewFile .. " New file"
 ---@type string
-local update_plugins = icons.misc.Update .. " Update plugins"
+local update_plugins = icons.misc.Update .. " Update rocks plugins"
 ---@type string
 local open_mason_window = icons.ui.Gear .. " Open Mason Window"
 ---@type string
@@ -27,6 +27,8 @@ local show_mru = icons.ui.Package .. " MRU"
 local dotfyle_generate = icons.ui.Gear .. " Generate Dotfyle"
 ---@type string
 local ts_update = icons.ui.Gear .. " Update TreeSitter parsers"
+---@type string
+local edit_rocks_config = icons.ui.NewFile .. " Edit rocks config"
 
 local alpha = require("alpha")
 local dashboard = require("alpha.themes.dashboard")
@@ -47,15 +49,15 @@ local buttons = {
     val = {
         { type = "text", val = quick_links, opts = { hl = "SpecialComment", position = "center" } },
         { type = "padding", val = 1 },
-        dashboard.button("e", new_file, ":ene <BAR> startinsert <CR>"),
-        dashboard.button("f", search_files, "<cmd>Telescope smart_open<CR>"),
-        dashboard.button("r", show_mru, "<cmd>Telescope oldfiles<CR>"),
-        dashboard.button(".", run_oil, "<cmd>Oil<CR>"),
+        dashboard.button("e", edit_rocks_config, "<cmd>Rocks edit<CR>"),
+        --dashboard.button("e", new_file, ":ene <BAR> startinsert <CR>"),
+        --dashboard.button("f", search_files, "<cmd>Telescope smart_open<CR>"),
+        --dashboard.button("r", show_mru, "<cmd>Telescope oldfiles<CR>"),
         dashboard.button("u", update_plugins, "<cmd>Rocks sync<CR>"),
-        dashboard.button("m", open_mason_window, "<cmd>Mason<CR>"),
-        dashboard.button("t", ts_update, "<cmd>TSUpdate<CR>"),
+        --dashboard.button("m", open_mason_window, "<cmd>Mason<CR>"),
+        --dashboard.button("t", ts_update, "<cmd>TSUpdate<CR>"),
         dashboard.button("c", run_checkhealth, "<cmd>checkhealth<CR>"),
-        dashboard.button("d", dotfyle_generate, "<cmd>DotfyleGenerate --keymaps<CR>"),
+        --dashboard.button("d", dotfyle_generate, "<cmd>DotfyleGenerate --keymaps<CR>"),
         dashboard.button("q", quit_nvim, ":qa<CR>"),
     },
     position = "center",
