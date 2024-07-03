@@ -1,5 +1,4 @@
----@type table
-local opts = {
+require("incline").setup({
     debounce_threshold = {
         falling = 50,
         rising = 10,
@@ -65,16 +64,4 @@ local opts = {
         },
         zindex = 50,
     },
-}
-
----@type LazySpec
-local spec = {
-    "b0o/incline.nvim",
-    --lazy = false,
-    event = "VeryLazy",
-    opts = opts,
-    --config = true,
-    cond = false,
-}
-
-return spec
+})

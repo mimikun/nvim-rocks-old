@@ -13,7 +13,6 @@ local spec = {
     end,
     --lazy = false,
     event = events,
-    dependencies = { "nvim-treesitter/nvim-treesitter" },
     --cond = false,
 }
 

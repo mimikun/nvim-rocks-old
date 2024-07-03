@@ -100,32 +100,8 @@ local tabline = {
 }
 tabline = {}
 
----@type table
-local events = { "BufReadPre", "BufNewFile" }
-
----@type table
-local dependencies = {
-    "nvim-tree/nvim-web-devicons",
-    "lewis6991/gitsigns.nvim",
-    "meuter/lualine-so-fancy.nvim",
-    "SmiteshP/nvim-navic",
-}
-
----@type table
-local opts = {
+require("lualine").setup({
     options = options,
     sections = sections,
     tabline = tabline,
-}
-
----@type LazySpec
-local spec = {
-    "nvim-lualine/lualine.nvim",
-    --lazy = false,
-    event = events,
-    dependencies = dependencies,
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+})

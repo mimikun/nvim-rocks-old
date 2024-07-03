@@ -1,6 +1,6 @@
 [default.extend-words]
 # noice.nvim
-#noice = "noice"
+noice = "noice"
 # vim keymap
 enew = "enew"
 # key mapping in dot_config/nvim/lua/plugins/telescope-nvim.lua

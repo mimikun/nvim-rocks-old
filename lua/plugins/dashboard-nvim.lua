@@ -35,5 +35,4 @@ require("dashboard").setup({
         file_height = 0,
         file_width = 0,
     },
-}
-)
+})

@@ -22,6 +22,22 @@ colorscheme = "kanagawa-wave"
 # NOTE: zero-config plugins
 "dressing.nvim" = "2.2.2"
 "neoscroll.nvim" = "0.2.0"
+# NOTE: tree-sitter parsers
+tree-sitter-toml = "scm"
+tree-sitter-json = "scm"
+tree-sitter-markdown = "scm"
+
+[treesitter]
+auto_highlight = "all"
+auto_install = "prompt"
+
+[treesitter.parser_map]
+# Determine the filetype with ':lua =vim.bo[0].filetype'.
+# NOTE: You don't actually have to add these examples.
+# They are added by default.
+#PKGBUILD = "bash"
+#cls = "latex"
+#sty = "latex"
 
 [plugins."kanagawa.nvim"]
 version = "scm"
@@ -341,8 +357,199 @@ opt = true
 
 [plugins."feline.nvim"]
 version = "1.6.2"
+event = [ "BufReadPre", "BufNewFile" ]
+opt = true
 
 [plugins."smoothcursor.nvim"]
 version = "scm"
 event = "BufRead"
 opt = true
+
+## NOTE: cond = false now
+#[plugins."flash.nvim"]
+#version = "1.18.3"
+#event = "DeferredUIEnter"
+#keys = [
+#    { lhs = "s", desc = "Flash" },
+#    { lhs = "S", desc = "Flash Treesitter" },
+#    { lhs = "r", desc = "Remote Flash" },
+#    { lhs = "R", desc = "Treesitter Search" },
+#    { lhs = "<c-s>", desc = "Toggle Flash Search" },
+#    { lhs = "<leader>h", desc = "Flash HopWord" },
+#]
+#opt = true
+
+
+[plugins."headlines.nvim"]
+version = "scm"
+opt = true
+
+## NOTE: cond = false now
+#[plugins."heirline.nvim"]
+#version = "1.0.6"
+#event = "UIEnter"
+#opt = true
+
+[plugins."hover.nvim"] 
+version = "scm"
+keys = [
+    { lhs = "K", desc = "hover.nvim" },
+    { lhs = "gK", desc = "hover.nvim (select)" },
+    { lhs = "<C-p>", desc = "hover.nvim (previous source)" },
+    { lhs = "<C-n>", desc = "hover.nvim (next source)" },
+    { lhs = "<MouseMove>", desc = "hover.nvim (mouse)" },
+]
+opt = true
+
+## NOTE: cond = false now
+#[plugins."incline.nvim"]
+#version = "0.0.1"
+#event = "DeferredUIEnter"
+#opt = true
+
+[plugins."indent-blankline.nvim"]
+version = "3.7.1"
+cmd = [
+    "IBLEnable",
+    "IBLDisable",
+    "IBLToggle",
+    "IBLEnableScope",
+    "IBLDisableScope",
+    "IBLToggleScope",
+]
+event = "VimEnter"
+#opt = true
+
+[plugins."lazygit.nvim"]
+version = "scm"
+cmd = [
+    "LazyGit",
+    "LazyGitConfig",
+    "LazyGitCurrentFile",
+    "LazyGitFilter",
+    "LazyGitFilterCurrentFile",
+]
+opt = true
+
+[plugins."lualine.nvim"]
+version = "scm"
+event = [ "BufReadPre", "BufNewFile" ]
+opt = true
+
+## NOTE: cond = false now
+#[plugins.nvim-scrollbar]
+#version = "scm"
+#event = "VimEnter"
+##opt = true
+
+[plugins."sqlite.lua"]
+version = "1.2.2"
+opt = true
+
+[plugins."trouble.nvim"]
+version = "3.4.3"
+cmds = [
+    "Trouble",
+    "TroubleClose",
+    "TroubleToggle",
+    "TroubleRefresh",
+]
+opt = true
+
+[plugins."dmacro.nvim"]
+git = "github:tani/dmacro.nvim"
+keys = [
+    { lhs = "<C-t>", desc = "Use dmacro" },
+]
+opt = true
+
+## WARN: deprecated error
+#[plugins."ccc.nvim"]
+#git = "github:uga-rosa/ccc.nvim"
+##version = "1.6.0"
+#event = "BufRead"
+#opt = true
+
+[plugins."codeshot.nvim"]
+git = "github:SergioRibera/codeshot.nvim"
+opt = true
+
+[plugins."comment.nvim"]
+version = "0.8.0"
+#git = "github:numToStr/Comment.nvim"
+event = "BufRead"
+opt = true
+
+[plugins."dotfyle-metadata.nvim"]
+git = "github:creativenull/dotfyle-metadata.nvim"
+cmd = [
+    "DotfyleGenerate",
+    "DotfyleOpen",
+]
+opt = true
+
+[plugins."git.nvim"]
+git = "github:dinhhuy258/git.nvim"
+cmd = [
+    "Git",
+    "GitBlame",
+    "GitDiff",
+    "GitDiffClose",
+    "GitCreatePullRequest",
+    "GitCreatePullRequest",
+    "GitRevert",
+    "GitRevertFile",
+]
+opt = true
+
+[plugins."glow.nvim"]
+version = "0.2.0"
+#git = "github:ellisonleao/glow.nvim"
+cmd = "Glow"
+opt = true
+
+[plugins."2048.nvim"]
+version = "2.8.2"
+#git = "github:NStefan002/2048.nvim"
+cmd = "Play2048"
+opt = true
+
+[plugins."image_preview.nvim"]
+git = "github:adelarsq/image_preview.nvim"
+event = "DeferredUIEnter"
+opt = true
+
+[plugins."marks.nvim"]
+version = "scm"
+#git = "github:chentoast/marks.nvim"
+cmd = [
+    "MarksToggleSigns",
+    "MarksListBuf",
+    "MarksListGlobal",
+    "MarksListAll",
+    "BookmarksList group_number",
+    "BookmarksListAll",
+    "MarksQFListBuf",
+    "MarksQFListGlobal",
+    "MarksQFListAll",
+    "BookmarksQFList group_number",
+    "BookmarksQFListAll",
+]
+opt = true
+
+#---@type table
+#local dependencies = {
+#    "cespare/vim-toml",
+#    "nastevens/vim-duckscript",
+#}
+#
+#---@type LazySpec
+#local spec = {
+#    "nastevens/vim-cargo-make",
+#    --lazy = false,
+#    ft = "cargo-make",
+#    dependencies = dependencies,
+#    --cond = false,
+#}
+#
+#return spec
