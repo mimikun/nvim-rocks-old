@@ -23,9 +23,67 @@ colorscheme = "kanagawa-wave"
 "dressing.nvim" = "2.2.2"
 "neoscroll.nvim" = "0.2.0"
 # NOTE: tree-sitter parsers
-tree-sitter-toml = "scm"
+tree-sitter-bash = "scm"
+tree-sitter-c = "scm"
+tree-sitter-c_sharp = "scm"
+tree-sitter-cmake = "scm"
+tree-sitter-cpp = "scm"
+tree-sitter-css = "scm"
+tree-sitter-djot = "scm"
+tree-sitter-dockerfile = "scm"
+tree-sitter-fish = "scm"
+tree-sitter-git_config = "scm"
+tree-sitter-git_rebase = "scm"
+tree-sitter-gitattributes = "scm"
+tree-sitter-gitcommit = "scm"
+tree-sitter-gitignore = "scm"
+tree-sitter-go = "scm"
+tree-sitter-gomod = "scm"
+tree-sitter-gosum = "scm"
+tree-sitter-gowork = "scm"
+tree-sitter-graphql = "scm"
+tree-sitter-html = "scm"
+tree-sitter-ini = "scm"
+tree-sitter-java = "scm"
+tree-sitter-javascript = "scm"
+tree-sitter-jq = "scm"
+tree-sitter-jsdoc = "scm"
 tree-sitter-json = "scm"
+tree-sitter-jsonc = "scm"
+tree-sitter-json5 = "scm"
+tree-sitter-kdl = "scm"
+tree-sitter-latex = "scm"
+tree-sitter-lua = "scm"
+tree-sitter-luadoc = "scm"
+tree-sitter-luap = "scm"
+tree-sitter-luau = "scm"
+tree-sitter-make = "scm"
 tree-sitter-markdown = "scm"
+tree-sitter-markdown_inline = "scm"
+tree-sitter-ninja = "scm"
+tree-sitter-nix = "scm"
+tree-sitter-python = "scm"
+tree-sitter-regex = "scm"
+tree-sitter-rst = "scm"
+tree-sitter-ruby = "scm"
+tree-sitter-rust = "scm"
+tree-sitter-scala = "scm"
+tree-sitter-scss = "scm"
+tree-sitter-sql = "scm"
+tree-sitter-svelte = "scm"
+tree-sitter-swift = "scm"
+tree-sitter-tsx = "scm"
+tree-sitter-toml = "scm"
+tree-sitter-typescript = "scm"
+tree-sitter-vim = "scm"
+tree-sitter-vimdoc = "scm"
+tree-sitter-vue = "scm"
+tree-sitter-yaml = "scm"
+tree-sitter-zig = "scm"
+tree-sitter-just = "scm"
+## NOTE: Linux or WSL only
+#tree-sitter-ocaml = "scm"
+#tree-sitter-ocaml_interface = "scm"
 
 [treesitter]
 auto_highlight = "all"
@@ -38,16 +96,6 @@ auto_install = "prompt"
 #PKGBUILD = "bash"
 #cls = "latex"
 #sty = "latex"
-
-[plugins."kanagawa.nvim"]
-version = "scm"
-colorscheme = [
-  "kanagawa",
-  "kanagawa-dragon",
-  "kanagawa-lotus",
-  "kanagawa-wave",
-]
-#opt = true
 
 [plugins."auto-save.nvim"]
 version = "scm"
@@ -537,19 +585,121 @@ cmd = [
 ]
 opt = true
 
-#---@type table
-#local dependencies = {
-#    "cespare/vim-toml",
-#    "nastevens/vim-duckscript",
-#}
-#
-#---@type LazySpec
-#local spec = {
-#    "nastevens/vim-cargo-make",
-#    --lazy = false,
-#    ft = "cargo-make",
-#    dependencies = dependencies,
-#    --cond = false,
-#}
-#
-#return spec
+## NOTE: cond = false now
+#[plugins."drop.nvim"]
+#git = "github:folke/drop.nvim"
+#event = "VimEnter"
+#opt = true
+
+[plugins."flagmode.nvim"]
+git = "github:prichrd/flagmode.nvim"
+cmd = [
+    "FlagToggle",
+    "FlagActivate",
+    "FlagDeactivate",
+]
+opt = true
+
+[plugins."gitsigns.nvim"]
+git = "github:lewis6991/gitsigns.nvim"
+event = "VimEnter"
+keys = [
+    { lhs = "g[", desc = "Jump to the previous hunk in the current buffer." },
+    { lhs = "g]", desc = "Jump to the next hunk in the current buffer." },
+    { lhs = "gh", desc = "Toggle diff highlights" },
+    { lhs = "gp", desc = "Preview the hunk at the cursor position inline in the buffer." },
+]
+opt = true
+
+[plugins."hop.nvim"]
+git = "github:smoka7/hop.nvim"
+keys = [
+    { lhs = "<leader>h", desc = "HopWord" },
+]
+cmd = [
+    "HopWord",
+    "HopChar1",
+    "HopChar2",
+    "HopPattern",
+    "HopLine",
+    "HopLineStart",
+    "HopAnywhere",
+    "HopNodes",
+    "HopYankChar1",
+]
+opt = true
+
+# NOTE: cond = false now
+#[plugins."huez.nvim"]
+#git = "github:vague2k/huez.nvim"
+#event = "UIEnter"
+#cmd = [
+#    "Huez",
+#    "HuezEnsured",
+#    "HuezLive",
+#    "HuezFavorites",
+#]
+#opt = true
+
+[plugins."human-rights.nvim"]
+git = "github:mimikun/human-rights.nvim"
+cmd = [
+    "ShowCpu",
+    "ShowMemory",
+    "ShowParallelism",
+    "ShowDisk",
+]
+opt = true
+
+# colorschemes
+[plugins."kanagawa.nvim"]
+version = "scm"
+colorscheme = [
+  "kanagawa",
+  "kanagawa-dragon",
+  "kanagawa-lotus",
+  "kanagawa-wave",
+]
+opt = true
+
+## Can't use now
+#[plugins.catppuccin]
+#version = "0.1.0"
+#colorscheme = [
+#        "catppuccin",
+#        "catppuccin-latte",
+#        "catppuccin-frappe",
+#        "catppuccin-macchiato",
+#        "catppuccin-mocha",
+#]
+#opt = true
+
+[plugins.github-nvim-theme]
+version = "1.0.2"
+colorscheme = [
+"github_dark",
+"github_dark_colorblind",
+"github_dark_default",
+"github_dark_dimmed",
+"github_dark_high_contrast",
+"github_dark_tritanopia",
+"github_light",
+"github_light_colorblind",
+"github_light_default",
+"github_light_high_contrast",
+"github_light_tritanopia",
+"github_dimmed",
+]
+opt = true
+
+[plugins."material.nvim"]
+version = "scm"
+colorscheme = [
+"material",
+"material-darker",
+"material-lighter",
+"material-oceanic",
+"material-palenight",
+"material-deep-ocean",
+]
+opt = true

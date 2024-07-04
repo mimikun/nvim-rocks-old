@@ -1,13 +1,4 @@
----@type table
-local keys = {
-    { "g[", desc = "Jump to the previous hunk in the current buffer." },
-    { "g]", desc = "Jump to the next hunk in the current buffer." },
-    { "gh", desc = "Toggle diff highlights" },
-    { "gp", desc = "Preview the hunk at the cursor position inline in the buffer." },
-}
-
----@type table
-local opts = {
+require("gitsigns").setup({
     signs = {
         add = { text = "│" },
         change = { text = "│" },
@@ -53,27 +44,13 @@ local opts = {
         row = 0,
         col = 1,
     },
-}
+})
 
----@type LazySpec
-local spec = {
-    "lewis6991/gitsigns.nvim",
-    --lazy = false,
-    keys = keys,
-    event = { "VimEnter" },
-    config = function()
-        require("gitsigns").setup(opts)
-
-        -- g]で前の変更箇所へ移動する
-        vim.keymap.set("n", "g[", ":Gitsigns prev_hunk<CR>")
-        -- g[で次の変更箇所へ移動する,
-        vim.keymap.set("n", "g]", ":Gitsigns next_hunk<CR>")
-        -- ghでdiffをハイライトする
-        vim.keymap.set("n", "gh", ":Gitsigns toggle_linehl<CR>")
-        -- gpでカーソル行のdiffを表示する
-        vim.keymap.set("n", "gp", ":Gitsigns preview_hunk_inline<CR>")
-    end,
-    --cond = false,
-}
-
-return spec
+-- g]で前の変更箇所へ移動する
+vim.keymap.set("n", "g[", ":Gitsigns prev_hunk<CR>")
+-- g[で次の変更箇所へ移動する,
+vim.keymap.set("n", "g]", ":Gitsigns next_hunk<CR>")
+-- ghでdiffをハイライトする
+vim.keymap.set("n", "gh", ":Gitsigns toggle_linehl<CR>")
+-- gpでカーソル行のdiffを表示する
+vim.keymap.set("n", "gp", ":Gitsigns preview_hunk_inline<CR>")
