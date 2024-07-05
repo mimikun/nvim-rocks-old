@@ -714,14 +714,6 @@ colorscheme = [
 ]
 opt = true
 
-[plugins."nightfox.nvim"]
-version = "3.9.3"
-opt = true
-
-[plugins."sweetie.nvim"]
-version = "3.1.1"
-opt = true
-
 [plugins."tokyonight.nvim"]
 version = "4.3.0"
 colorscheme = [
@@ -733,40 +725,13 @@ colorscheme = [
 ]
 opt = true
 
-#--- witch_themes
-#colorscheme = [
-#"witch-dark",
-#"witch-light",
-#]
-#--- nightfall_themes
-#colorscheme = [
-#"nightfall",
-#"deeper-night",
-#"maron",
-#]
-#--- monokai_pro_themes
-#colorscheme = [
-#"monokai-pro",
-#"monokai-pro-classic",
-#"monokai-pro-default",
-#"monokai-pro-machine",
-#"monokai-pro-octagon",
-#"monokai-pro-ristretto",
-#"monokai-pro-spectrum",
-#]
-#--- pastelnight_themes
-#colorscheme = [
-#"pastelnight",
-#"pastelnight-highcontrast",
-#]
-#--- lackluster_themes
-#colorscheme = [
-#"lackluster",
-#"lackluster-dark",
-#"lackluster-hack",
-#"lackluster-mint",
-#"lackluster-night",
-#]
+[plugins."nightfox.nvim"]
+version = "3.9.3"
+opt = true
+
+[plugins."sweetie.nvim"]
+version = "3.1.1"
+opt = true
 
 [plugins."ariake.nvim"]
 git = "github:jim-at-jibba/ariake.nvim"
@@ -878,3 +843,37 @@ git = "github:mellow-theme/mellow.nvim"
 colorscheme = "mellow"
 opt = true
 
+#--- witch_themes
+#colorscheme = [
+#"witch-dark",
+#"witch-light",
+#]
+#--- nightfall_themes
+#colorscheme = [
+#"nightfall",
+#"deeper-night",
+#"maron",
+#]
+#--- monokai_pro_themes
+#colorscheme = [
+#"monokai-pro",
+#"monokai-pro-classic",
+#"monokai-pro-default",
+#"monokai-pro-machine",
+#"monokai-pro-octagon",
+#"monokai-pro-ristretto",
+#"monokai-pro-spectrum",
+#]
+#--- pastelnight_themes
+#colorscheme = [
+#"pastelnight",
+#"pastelnight-highcontrast",
+#]
+#--- lackluster_themes
+#colorscheme = [
+#"lackluster",
+#"lackluster-dark",
+#"lackluster-hack",
+#"lackluster-mint",
+#"lackluster-night",
+#]
