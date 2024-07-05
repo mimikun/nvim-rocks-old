@@ -139,7 +139,14 @@ local opts = {
     colorscheme = "penumbra",
 },
 {
-    name = "cyberdream",
+"scottmckendry/cyberdream.nvim",
+local opts = {
+    transparent = vim.g.transparent_enabled,
+    italic_comments = true,
+    hide_fillchars = true,
+    borderless_telescope = true,
+    terminal_colors = true,
+}
     colorscheme = "cyberdream",
 },
 {
@@ -182,11 +189,11 @@ local opts = {
     colorscheme = "eldritch",
 },
 {
-    name = "ariake",
+    "jim-at-jibba/ariake.nvim",
     colorscheme = "ariake",
 },
 {
-    name = "abstract",
+    "Abstract-IDE/Abstract-cs",
     colorscheme = "abscs",
 },
 {
@@ -201,7 +208,15 @@ local opts = {
     colorscheme = "evergarden",
 },
 {
-    name = "dark_flat",
+"sekke276/dark_flat.nvim",
+local opts = {
+    transparent = vim.g.transparent_enabled,
+    colors = {},
+    themes = function()
+        return {}
+    end,
+    italics = true,
+}
     colorscheme = "dark_flat",
 },
 {
@@ -354,61 +369,3 @@ local opts = {
     name = "gaming",
     colorscheme = "gaming",
 },
--- NOTE: Not support "transparent = true"
----@type LazySpec
-local spec = {
-    "Abstract-IDE/Abstract-cs",
-    --lazy = false,
-    --cond = false,
-}
-
-return spec
--- NOTE: Not support "transparent = true"
----@type LazySpec
-local spec = {
-    "jim-at-jibba/ariake.nvim",
-    --lazy = false,
-    config = true,
-    --cond = false,
-}
-
-return spec
----@type table
-local opts = {
-    transparent = vim.g.transparent_enabled,
-    italic_comments = true,
-    hide_fillchars = true,
-    borderless_telescope = true,
-    terminal_colors = true,
-}
-
----@type LazySpec
-local spec = {
-    "scottmckendry/cyberdream.nvim",
-    --lazy = false,
-    opts = opts,
-    --cond = false,
-}
-
-return spec
----@type table
-local opts = {
-    transparent = vim.g.transparent_enabled,
-    colors = {},
-    themes = function()
-        return {}
-    end,
-    italics = true,
-}
-
----@type LazySpec
-local spec = {
-    "sekke276/dark_flat.nvim",
-    --lazy = false,
-    opts = opts,
-    --cond = false,
-}
-
-return spec
----@type LazySpec
-local spec = {
