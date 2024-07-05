@@ -22,6 +22,7 @@ colorscheme = "kanagawa-wave"
 # NOTE: zero-config plugins
 "dressing.nvim" = "2.2.2"
 "neoscroll.nvim" = "0.2.0"
+"nightfox.nvim" = "3.9.3"
 # NOTE: tree-sitter parsers
 tree-sitter-bash = "scm"
 tree-sitter-c = "scm"
@@ -713,6 +714,7 @@ colorscheme = [
 "monokai_soda",
 ]
 opt = true
+
 
 #--- witch_themes
 #colorscheme = [
