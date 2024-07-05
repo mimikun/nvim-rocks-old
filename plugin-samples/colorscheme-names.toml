@@ -1,16 +1,16 @@
-#"sontungexpt/witch",
+#"sontungexpt/witch"
 
-#"pauchiner/pastelnight.nvim",
+#"pauchiner/pastelnight.nvim"
 #local opts = {
 #    transparent = vim.g.transparent_enabled,
 #}
 
-#"loctvl842/monokai-pro.nvim",
+#"loctvl842/monokai-pro.nvim"
 #local opts = {
 #    transparent_background = vim.g.transparent_enabled,
 #}
 
-#"slugbyte/lackluster.nvim",
+#"slugbyte/lackluster.nvim"
 #local lackluster = require("lackluster")
 #
 #lackluster.setup({
@@ -26,8 +26,8 @@
 #    },
 #})
 
-"rafamadriz/neon",
-colorscheme = "neon",
+"rafamadriz/neon"
+colorscheme = "neon"
 config = function()
     vim.g.neon_style = "default"
     --vim.g.neon_style = "dark"
@@ -39,39 +39,39 @@ config = function()
     vim.g.neon_italic_variable = false
     vim.g.neon_bold = false
     vim.g.neon_transparent = vim.g.transparent_enabled
-end,
+end
 
-"b0o/lavi.nvim",
-dependencies = { "rktjmp/lush.nvim" },
-colorscheme = "lavi",
+"b0o/lavi.nvim"
+dependencies = { "rktjmp/lush.nvim" }
+colorscheme = "lavi"
 
-"loganswartz/sunburn.nvim",
-colorscheme = "sunburn",
-dependencies = { "loganswartz/polychrome.nvim" },
+"loganswartz/sunburn.nvim"
+colorscheme = "sunburn"
+dependencies = { "loganswartz/polychrome.nvim" }
 
-"m15a/nvim-srcerite",
-colorscheme = "srcerite",
-dependencies = { "Iron-E/nvim-highlite" },
+"m15a/nvim-srcerite"
+colorscheme = "srcerite"
+dependencies = { "Iron-E/nvim-highlite" }
 init = function()
     vim.g.srcerite_inverse_visual = true
     vim.g.srcerite_inverse_search = false
     vim.g.srcerite_inverse_match_paren = false
-end,
+end
 
-"tiagovla/tokyodark.nvim",
-colorscheme = "tokyodark",
+"tiagovla/tokyodark.nvim"
+colorscheme = "tokyodark"
 local opts = {
 transparent_background = vim.g.transparent_enabled,
 }
 
-"shaunsingh/nord.nvim",
-colorscheme = "nord",
+"shaunsingh/nord.nvim"
+colorscheme = "nord"
 config = function()
     vim.g.nord_disable_background = vim.g.transparent_enabled
-end,
+end
 
-"dgox16/oldworld.nvim",
-colorscheme = "oldworld",
+"dgox16/oldworld.nvim"
+colorscheme = "oldworld"
 local opts = {
 -- enable terminal colors
 terminal_colors = true,
@@ -112,8 +112,8 @@ integrations = {
 },
 }
 
-"Allianaab2m/penumbra.nvim",
-colorscheme = "penumbra",
+"Allianaab2m/penumbra.nvim"
+colorscheme = "penumbra"
 local opts = {
 italic_comment = false,
 transparent_bg = vim.g.transparent_enabled,
@@ -124,8 +124,8 @@ contrast = nil,
 --contrast = "plusplus",
 }
 
-"scottmckendry/cyberdream.nvim",
-colorscheme = "cyberdream",
+"scottmckendry/cyberdream.nvim"
+colorscheme = "cyberdream"
 local opts = {
 transparent = vim.g.transparent_enabled,
 italic_comments = true,
@@ -134,8 +134,8 @@ borderless_telescope = true,
 terminal_colors = true,
 }
 
-"mellow-theme/mellow.nvim",
-colorscheme = "mellow",
+"mellow-theme/mellow.nvim"
+colorscheme = "mellow"
 init = function()
     vim.g.mellow_italic_comments = true
     vim.g.mellow_italic_keywords = false
@@ -148,4 +148,4 @@ init = function()
     vim.g.mellow_bold_functions = false
     vim.g.mellow_bold_variables = false
     vim.g.mellow_transparent = vim.g.transparent_enabled
-end,
+end
