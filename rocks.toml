@@ -22,7 +22,6 @@ colorscheme = "kanagawa-wave"
 # NOTE: zero-config plugins
 "dressing.nvim" = "2.2.2"
 "neoscroll.nvim" = "0.2.0"
-"nightfox.nvim" = "3.9.3"
 # NOTE: tree-sitter parsers
 tree-sitter-bash = "scm"
 tree-sitter-c = "scm"
@@ -715,6 +714,13 @@ colorscheme = [
 ]
 opt = true
 
+[plugins."nightfox.nvim"]
+version = "3.9.3"
+opt = true
+
+[plugins."sweetie.nvim"]
+version = "3.1.1"
+opt = true
 
 #--- witch_themes
 #colorscheme = [
