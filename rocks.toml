@@ -722,6 +722,17 @@ opt = true
 version = "3.1.1"
 opt = true
 
+[plugins."tokyonight.nvim"]
+version = "4.3.0"
+colorscheme = [
+"tokyonight",
+"tokyonight-day",
+"tokyonight-moon",
+"tokyonight-night",
+"tokyonight-storm",
+]
+opt = true
+
 #--- witch_themes
 #colorscheme = [
 #"witch-dark",
@@ -732,14 +743,6 @@ opt = true
 #"nightfall",
 #"deeper-night",
 #"maron",
-#]
-#--- tokyonight_themes
-#colorscheme = [
-#"tokyonight",
-#"tokyonight-day",
-#"tokyonight-moon",
-#"tokyonight-night",
-#"tokyonight-storm",
 #]
 #--- monokai_pro_themes
 #colorscheme = [
