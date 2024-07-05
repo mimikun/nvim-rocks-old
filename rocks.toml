@@ -733,6 +733,38 @@ colorscheme = [
 ]
 opt = true
 
+[plugins."monokai-pro.nvim"]
+git = "github:loctvl842/monokai-pro.nvim"
+colorscheme = [
+"monokai-pro",
+"monokai-pro-classic",
+"monokai-pro-default",
+"monokai-pro-machine",
+"monokai-pro-octagon",
+"monokai-pro-ristretto",
+"monokai-pro-spectrum",
+]
+opt = true
+
+[plugins."pastelnight.nvim"]
+git = "github:pauchiner/pastelnight.nvim"
+colorscheme = [
+"pastelnight",
+"pastelnight-highcontrast",
+]
+opt = true
+
+[plugins."lackluster.nvim"]
+git = "github:slugbyte/lackluster.nvim"
+colorscheme = [
+"lackluster",
+"lackluster-dark",
+"lackluster-hack",
+"lackluster-mint",
+"lackluster-night",
+]
+opt = true
+
 [plugins."nightfox.nvim"]
 version = "3.9.3"
 opt = true
@@ -858,28 +890,3 @@ opt = true
 #"maron",
 #]
 
-#--- monokai_pro_themes
-#colorscheme = [
-#"monokai-pro",
-#"monokai-pro-classic",
-#"monokai-pro-default",
-#"monokai-pro-machine",
-#"monokai-pro-octagon",
-#"monokai-pro-ristretto",
-#"monokai-pro-spectrum",
-#]
-
-#--- pastelnight_themes
-#colorscheme = [
-#"pastelnight",
-#"pastelnight-highcontrast",
-#]
-
-#--- lackluster_themes
-#colorscheme = [
-#"lackluster",
-#"lackluster-dark",
-#"lackluster-hack",
-#"lackluster-mint",
-#"lackluster-night",
-#]
