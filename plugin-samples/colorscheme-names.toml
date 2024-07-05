@@ -6,6 +6,19 @@
 
 
 
+[plugins.evergarden]
+git = "github:comfysage/evergarden"
+colorscheme = "evergarden"
+opt = true
+
+# evergarden.lua
+local opts = {
+transparent_background = vim.g.transparent_enabled,
+contrast_dark = "hard",
+--contrast_dark = "medium",
+--contrast_dark = "soft",
+overrides = {},
+}
 
 [plugins."ariake.nvim"]
 git = "github:jim-at-jibba/ariake.nvim"
@@ -363,12 +376,3 @@ local opts = {
 transparent = vim.g.transparent_enabled,
 }
 
-"comfysage/evergarden",
-colorscheme = "evergarden",
-local opts = {
-transparent_background = vim.g.transparent_enabled,
-contrast_dark = "hard",
---contrast_dark = "medium",
---contrast_dark = "soft",
-overrides = {},
-}
