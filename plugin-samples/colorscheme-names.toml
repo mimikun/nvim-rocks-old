@@ -1,4 +1,6 @@
-"rafamadriz/neon"
+[plugins.neon]
+git = "github:rafamadriz/neon"
+#cp neon.lua
 colorscheme = "neon"
 config = function()
     vim.g.neon_style = "default"
@@ -131,3 +133,4 @@ end
 #})
 
 #"sontungexpt/witch"
+colorscheme-names.toml
