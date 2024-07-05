@@ -1,6 +1,45 @@
---- lua_other_themes
+#"sontungexpt/witch",
+
+#"pauchiner/pastelnight.nvim",
+#local opts = {
+#    transparent = vim.g.transparent_enabled,
+#}
+
+#"loctvl842/monokai-pro.nvim",
+#local opts = {
+#    transparent_background = vim.g.transparent_enabled,
+#}
+
+#"slugbyte/lackluster.nvim",
+#local lackluster = require("lackluster")
+#
+#lackluster.setup({
+#    tweak_syntax = {
+#        comment = lackluster.color.gray4,
+#        --comment = lackluster.color.gray5,
+#    },
+#    tweak_background = {
+#        normal = "none",
+#        telescope = "none",
+#        menu = lackluster.color.gray3,
+#        popup = "default",
+#    },
+#})
+
 {
-    name = "neon",
+    "rafamadriz/neon",
+    config = function()
+        vim.g.neon_style = "default"
+        --vim.g.neon_style = "dark"
+        --vim.g.neon_style = "light"
+        vim.g.neon_italic_comment = false
+        vim.g.neon_italic_keyword = false
+        vim.g.neon_italic_boolean = false
+        vim.g.neon_italic_function = false
+        vim.g.neon_italic_variable = false
+        vim.g.neon_bold = false
+        vim.g.neon_transparent = vim.g.transparent_enabled
+    end,
     colorscheme = "neon",
 },
 {
@@ -8,31 +47,95 @@
     colorscheme = "sweetie",
 },
 {
-    name = "lavi",
+    "b0o/lavi.nvim",
+    dependencies = { "rktjmp/lush.nvim" },
     colorscheme = "lavi",
 },
 {
-    name = "sunburn",
+    "loganswartz/sunburn.nvim",
+    dependencies = { "loganswartz/polychrome.nvim" },
     colorscheme = "sunburn",
 },
 {
-    name = "srcerite",
+    "m15a/nvim-srcerite",
+    --lazy = false,
+    dependencies = { "Iron-E/nvim-highlite" },
+    init = function()
+        vim.g.srcerite_inverse_visual = true
+        vim.g.srcerite_inverse_search = false
+        vim.g.srcerite_inverse_match_paren = false
+    end,
+    --cond = false,
     colorscheme = "srcerite",
 },
 {
-    name = "tokyodark",
+    "tiagovla/tokyodark.nvim",
     colorscheme = "tokyodark",
+local opts = {
+    transparent_background = vim.g.transparent_enabled,
+}
 },
 {
-    name = "nord",
+    "shaunsingh/nord.nvim",
+    config = function()
+        vim.g.nord_disable_background = vim.g.transparent_enabled
+    end,
     colorscheme = "nord",
 },
 {
-    name = "oldworld",
+"dgox16/oldworld.nvim",
+local opts = {
+    -- enable terminal colors
+    terminal_colors = true,
+    -- You can pass the style using the format: style = true
+    styles = {
+        -- style for comments
+        comments = { italic = true },
+        -- style for keywords
+        keywords = {},
+        -- style for identifiers
+        identifiers = {},
+        -- style for functions
+        functions = { italic = true },
+        -- style for variables
+        variables = {},
+        -- style for booleans
+        booleans = {},
+    },
+    -- You can disable/enable integrations
+    integrations = {
+        alpha = true,
+        cmp = true,
+        flash = true,
+        gitsigns = true,
+        hop = false,
+        indent_blankline = true,
+        lazy = true,
+        lsp = true,
+        markdown = true,
+        mason = true,
+        navic = false,
+        neo_tree = false,
+        noice = true,
+        notify = true,
+        rainbow_delimiters = true,
+        telescope = true,
+        treesitter = true,
+    },
+}
     colorscheme = "oldworld",
 },
 {
-    name = "penumbra",
+    "Allianaab2m/penumbra.nvim",
+local opts = {
+    italic_comment = false,
+    transparent_bg = vim.g.transparent_enabled,
+    show_end_of_buffer = false,
+    light = false,
+    contrast = nil,
+    --contrast = "plus",
+    --contrast = "plusplus",
+}
     colorscheme = "penumbra",
 },
 {
@@ -40,11 +143,24 @@
     colorscheme = "cyberdream",
 },
 {
-    name = "mellow",
+    "mellow-theme/mellow.nvim",
+    init = function()
+        vim.g.mellow_italic_comments = true
+        vim.g.mellow_italic_keywords = false
+        vim.g.mellow_italic_booleans = false
+        vim.g.mellow_italic_functions = false
+        vim.g.mellow_italic_variables = false
+        vim.g.mellow_bold_comments = false
+        vim.g.mellow_bold_keywords = false
+        vim.g.mellow_bold_booleans = false
+        vim.g.mellow_bold_functions = false
+        vim.g.mellow_bold_variables = false
+        vim.g.mellow_transparent = vim.g.transparent_enabled
+    end,
     colorscheme = "mellow",
 },
 {
-    name = "yash",
+    "kihachi2000/yash.nvim",
     colorscheme = "yash",
 },
 {
@@ -80,7 +196,7 @@
     colorscheme = "everblush",
 },
 {
-    name = "kurayami",
+    "kevinm6/kurayami.nvim",
     colorscheme = "kurayami",
 },
 {
@@ -88,15 +204,70 @@
     colorscheme = "fluoromachine",
 },
 {
-    name = "sonokai",
+    "sainnhe/sonokai",
+        vim.g.sonokai_style = "default"
+        --vim.g.sonokai_style = "atlantis"
+        --vim.g.sonokai_style = "andromeda"
+        --vim.g.sonokai_style = "shusia"
+        --vim.g.sonokai_style = "maia"
+        --vim.g.sonokai_style = "espresso"
+        vim.g.sonokai_transparent_background = vim.g.transparent_enabled and 1 or 0
+        vim.g.sonokai_current_word = vim.g.transparent_enabled and "bold" or "grey background"
+        -- if you want more ui components to be transparent
+        --vim.g.sonokai_transparent_background = 2
+        -- when not in transparent mode,
+        --vim.g.sonokai_current_word = "grey background"
+        -- when in transparent mode.
+        --vim.g.sonokai_current_word = "bold"
+        --vim.g.sonokai_current_word = "underline"
+        --vim.g.sonokai_current_word = "italic"
+        vim.g.sonokai_better_performance = 1
+        vim.g.sonokai_disable_italic_comment = 0
+        vim.g.sonokai_enable_italic = 0
+        vim.g.sonokai_cursor = "auto"
+        --vim.g.sonokai_cursor = "red"
+        --vim.g.sonokai_cursor = "orange"
+        --vim.g.sonokai_cursor = "yellow"
+        --vim.g.sonokai_cursor = "green"
+        --vim.g.sonokai_cursor = "blue"
+        --vim.g.sonokai_cursor = "purple"
+        vim.g.sonokai_dim_inactive_windows = 0
+        vim.g.sonokai_menu_selection_background = "blue"
+        --vim.g.sonokai_menu_selection_background = "green"
+        --vim.g.sonokai_menu_selection_background = "red"
+        vim.g.sonokai_spell_foreground = "none"
+        --vim.g.sonokai_spell_foreground = "colored"
+        vim.g.sonokai_show_eob = 1
+        vim.g.sonokai_float_style = "bright"
+        --vim.g.sonokai_float_style = "dim"
+        vim.g.sonokai_diagnostic_text_highlight = 0
+        vim.g.sonokai_diagnostic_line_highlight = 0
+        vim.g.sonokai_diagnostic_virtual_text = "grey"
+        --vim.g.sonokai_diagnostic_virtual_text = "colored"
+        --vim.g.sonokai_diagnostic_virtual_text = "highlighted"
+        vim.g.sonokai_disable_terminal_colors = 0
+        vim.g.sonokai_lightline_disable_bold = 0
+        vim.g.sonokai_better_performance = 0
+        --vim.g.sonokai_colors_override = {}
     colorscheme = "sonokai",
 },
 {
-    name = "kyotonight",
+    "shrikecode/kyotonight.vim",
+    init = function()
+        vim.g.kyotonight_bold = 1
+        vim.g.kyotonight_underline = 1
+        vim.g.kyotonight_italic = 0
+        vim.g.kyotonight_italic_comments = 0
+        vim.g.kyotonight_uniform_status_lines = 0
+        vim.g.kyotonight_bold_vertical_split_line = 0
+        vim.g.kyotonight_cursor_line_number_background = 0
+        vim.g.kyotonight_uniform_diff_background = 0
+        vim.g.kyotonight_lualine_bold = 1
+    end,
     colorscheme = "kyotonight",
 },
 {
-    name = "momiji",
+    "kyoh86/momiji",
     colorscheme = "momiji",
 },
 {
@@ -104,10 +275,211 @@
     colorscheme = "edge",
 },
 {
-    name = "dogrun",
+    "wadackel/vim-dogrun",
     colorscheme = "dogrun",
 },
 {
     name = "gaming",
     colorscheme = "gaming",
 },
+-- NOTE: Not support "transparent = true"
+---@type LazySpec
+local spec = {
+    "Abstract-IDE/Abstract-cs",
+    --lazy = false,
+    --cond = false,
+}
+
+return spec
+-- NOTE: Not support "transparent = true"
+---@type LazySpec
+local spec = {
+    "jim-at-jibba/ariake.nvim",
+    --lazy = false,
+    config = true,
+    --cond = false,
+}
+
+return spec
+---@type table
+local opts = {
+    transparent = vim.g.transparent_enabled,
+    italic_comments = true,
+    hide_fillchars = true,
+    borderless_telescope = true,
+    terminal_colors = true,
+}
+
+---@type LazySpec
+local spec = {
+    "scottmckendry/cyberdream.nvim",
+    --lazy = false,
+    opts = opts,
+    --cond = false,
+}
+
+return spec
+---@type table
+local opts = {
+    transparent = vim.g.transparent_enabled,
+    colors = {},
+    themes = function()
+        return {}
+    end,
+    italics = true,
+}
+
+---@type LazySpec
+local spec = {
+    "sekke276/dark_flat.nvim",
+    --lazy = false,
+    opts = opts,
+    --cond = false,
+}
+
+return spec
+---@type LazySpec
+local spec = {
+    "sainnhe/edge",
+    --lazy = false,
+    config = function()
+        vim.g.edge_style = "default"
+        --vim.g.edge_style = "aura"
+        --vim.g.edge_style = "neon"
+        vim.g.edge_transparent_background = vim.g.transparent_enabled and 1 or 0
+        vim.g.edge_current_word = vim.g.transparent_enabled and "bold" or "grey background"
+        -- if you want more ui components to be transparent
+        --vim.g.edge_transparent_background = 2
+        vim.g.edge_better_performance = 1
+        vim.g.edge_dim_foreground = 0
+        vim.g.edge_disable_italic_comment = 0
+        vim.g.edge_enable_italic = 0
+        vim.g.edge_cursor = "auto"
+        --vim.g.edge_cursor = "red"
+        --vim.g.edge_cursor = "yellow"
+        --vim.g.edge_cursor = "green"
+        --vim.g.edge_cursor = "cyan"
+        --vim.g.edge_cursor = "blue"
+        --vim.g.edge_cursor = "purple"
+        vim.g.edge_dim_inactive_windows = 0
+        vim.g.edge_menu_selection_background = "blue"
+        --vim.g.edge_menu_selection_background = "green"
+        --vim.g.edge_menu_selection_background = "purple"
+        vim.g.edge_spell_foreground = "none"
+        vim.g.edge_spell_foreground = "colored"
+        vim.g.edge_show_eob = 1
+        vim.g.edge_float_style = "bright"
+        --vim.g.edge_float_style = "dim"
+        vim.g.edge_diagnostic_text_highlight = 0
+        vim.g.edge_diagnostic_line_highlight = 0
+        vim.g.edge_diagnostic_virtual_text = "grey"
+        --vim.g.edge_diagnostic_virtual_text = "colored"
+        --vim.g.edge_diagnostic_virtual_text = "highlighted"
+        -- when not in transparent mode
+        --vim.g.edge_current_word = "grey background"
+        -- when in transparent mode
+        --vim.g.edge_current_word = "bold"
+        --vim.g.edge_current_word = "underline"
+        --vim.g.edge_current_word = "italic"
+        vim.g.edge_disable_terminal_colors = 0
+        vim.g.edge_lightline_disable_bold = 0
+        vim.g.edge_better_performance = 0
+        --vim.g.edge_colors_override = {}
+    end,
+    --cond = false,
+}
+
+return spec
+---@type table
+local opts = {
+    transparent = vim.g.transparent_enabled,
+}
+
+---@type LazySpec
+local spec = {
+    "eldritch-theme/eldritch.nvim",
+    --lazy = false,
+    opts = opts,
+    priority = 1000,
+    --cond = false,
+}
+
+return spec
+---@type table
+local opts = {
+    override = {},
+    transparent_background = vim.g.transparent_enabled,
+    nvim_tree = {
+        contrast = false,
+    },
+}
+
+---@type LazySpec
+local spec = {
+    "Everblush/nvim",
+    name = "everblush",
+    --lazy = false,
+    opts = opts,
+    --cond = false,
+}
+
+return spec
+---@type table
+local opts = {
+    transparent_background = vim.g.transparent_enabled,
+    contrast_dark = "hard",
+    --contrast_dark = "medium",
+    --contrast_dark = "soft",
+    overrides = {},
+}
+
+---@type LazySpec
+local spec = {
+    "comfysage/evergarden",
+    --lazy = false,
+    opts = opts,
+    --cond = false,
+}
+
+return spec
+---@type table
+local opts = {
+    glow = false,
+    brightness = 0.05,
+    theme = "fluoromachine",
+    --theme = "retrowave",
+    --theme = "delta",
+    transparent = vim.g.transparent_enabled,
+}
+
+---@type LazySpec
+local spec = {
+    "maxmx03/fluoromachine.nvim",
+    --lazy = false,
+    opts = opts,
+    --cond = false,
+}
+
+return spec
+---@type table
+local opts = {
+    transparent = vim.g.transparent_enabled,
+}
+
+---@type LazySpec
+local spec = {
+    "sho-87/kanagawa-paper.nvim",
+    --lazy = false,
+    opts = opts,
+    priority = 1000,
+    --cond = false,
+}
+
+return spec
+-- NOTE: Not support "transparent = true"
+---@type LazySpec
+local spec = {
+    --lazy = false,
+    priority = 1000,
+    --cond = false,
+}
