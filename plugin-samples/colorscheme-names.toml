@@ -4,7 +4,25 @@
 
 
 
+[plugins."kanagawa-paper.nvim"]
+git = "github:sho-87/kanagawa-paper.nvim"
+colorscheme = "kanagawa-paper"
+opt = true
 
+# kanagawa-paper-nvim.lua
+#require("kanagawa-paper").setup({
+#    transparent = vim.g.transparent_enabled,
+#})
+
+[plugins."eldritch.nvim"]
+git = "github:eldritch-theme/eldritch.nvim"
+colorscheme = "eldritch"
+opt = true
+
+# eldritch-nvim.lua
+#require("eldritch").setup({
+#    transparent = vim.g.transparent_enabled,
+#})
 
 [plugins.evergarden]
 git = "github:comfysage/evergarden"
@@ -12,13 +30,13 @@ colorscheme = "evergarden"
 opt = true
 
 # evergarden.lua
-local opts = {
-transparent_background = vim.g.transparent_enabled,
-contrast_dark = "hard",
---contrast_dark = "medium",
---contrast_dark = "soft",
-overrides = {},
-}
+#require("evergarden").setup({
+#    transparent_background = vim.g.transparent_enabled,
+#    contrast_dark = "hard",
+#    --contrast_dark = "medium",
+#    --contrast_dark = "soft",
+#    overrides = {},
+#})
 
 [plugins."ariake.nvim"]
 git = "github:jim-at-jibba/ariake.nvim"
@@ -362,17 +380,3 @@ init = function()
     vim.g.mellow_bold_variables = false
     vim.g.mellow_transparent = vim.g.transparent_enabled
 end,
-
-
-"sho-87/kanagawa-paper.nvim",
-colorscheme = "kanagawa-paper",
-local opts = {
-transparent = vim.g.transparent_enabled,
-}
-
-"eldritch-theme/eldritch.nvim",
-colorscheme = "eldritch",
-local opts = {
-transparent = vim.g.transparent_enabled,
-}
-
