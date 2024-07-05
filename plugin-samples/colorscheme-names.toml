@@ -1,4 +1,56 @@
 # put it
+
+
+
+
+
+
+
+
+[plugins."ariake.nvim"]
+git = "github:jim-at-jibba/ariake.nvim"
+colorscheme = "ariake"
+opt = true
+
+[plugins."/Abstract-cs"]
+git = "github:Abstract-IDE/Abstract-cs"
+colorscheme = "abscs"
+opt = true
+
+[plugins."yash.nvim"]
+git = "github:kihachi2000/yash.nvim"
+colorscheme = "yash"
+opt = true
+
+[plugins."dark_flat.nvim"]
+git = "github:sekke276/dark_flat.nvim"
+colorscheme = "dark_flat"
+opt = true
+
+# dark_flat-.nvim.lua
+#require("dark_flat").setup({
+#    transparent = vim.g.transparent_enabled,
+#    colors = {},
+#    themes = function()
+#        return {}
+#    end,
+#    italics = true,
+#})
+
+[plugins."everblush"]
+git = "github:Everblush/nvim"
+colorscheme = "everblush"
+opt = true
+
+# everblush.lua
+#require('everblush').setup({
+#    override = {},
+#    transparent_background = vim.g.transparent_enabled,
+#    nvim_tree = {
+#        contrast = false,
+#    },
+#})
+
 [plugins."kurayami.nvim"]
 git = "github:kevinm6/kurayami.nvim"
 colorscheme = "kurayami"
@@ -173,13 +225,9 @@ opt = true
 #        popup = "default",
 #    },
 #})
-{
-name = "gaming",
-colorscheme = "gaming",
-},
 
-{
 "rafamadriz/neon",
+colorscheme = "neon",
 config = function()
     vim.g.neon_style = "default"
     --vim.g.neon_style = "dark"
@@ -192,50 +240,38 @@ config = function()
     vim.g.neon_bold = false
     vim.g.neon_transparent = vim.g.transparent_enabled
 end,
-colorscheme = "neon",
-},
-{
-name = "sweetie",
-colorscheme = "sweetie",
-},
-{
+
 "b0o/lavi.nvim",
 dependencies = { "rktjmp/lush.nvim" },
 colorscheme = "lavi",
-},
-{
+
 "loganswartz/sunburn.nvim",
-dependencies = { "loganswartz/polychrome.nvim" },
 colorscheme = "sunburn",
-},
-{
+dependencies = { "loganswartz/polychrome.nvim" },
+
 "m15a/nvim-srcerite",
---lazy = false,
+colorscheme = "srcerite",
 dependencies = { "Iron-E/nvim-highlite" },
 init = function()
     vim.g.srcerite_inverse_visual = true
     vim.g.srcerite_inverse_search = false
     vim.g.srcerite_inverse_match_paren = false
 end,
---cond = false,
-colorscheme = "srcerite",
-},
-{
+
 "tiagovla/tokyodark.nvim",
 colorscheme = "tokyodark",
 local opts = {
 transparent_background = vim.g.transparent_enabled,
 }
-},
-{
+
 "shaunsingh/nord.nvim",
+colorscheme = "nord",
 config = function()
     vim.g.nord_disable_background = vim.g.transparent_enabled
 end,
-colorscheme = "nord",
-},
-{
+
 "dgox16/oldworld.nvim",
+colorscheme = "oldworld",
 local opts = {
 -- enable terminal colors
 terminal_colors = true,
@@ -275,10 +311,9 @@ integrations = {
     treesitter = true,
 },
 }
-colorscheme = "oldworld",
-},
-{
+
 "Allianaab2m/penumbra.nvim",
+colorscheme = "penumbra",
 local opts = {
 italic_comment = false,
 transparent_bg = vim.g.transparent_enabled,
@@ -288,10 +323,9 @@ contrast = nil,
 --contrast = "plus",
 --contrast = "plusplus",
 }
-colorscheme = "penumbra",
-},
-{
+
 "scottmckendry/cyberdream.nvim",
+colorscheme = "cyberdream",
 local opts = {
 transparent = vim.g.transparent_enabled,
 italic_comments = true,
@@ -299,10 +333,9 @@ hide_fillchars = true,
 borderless_telescope = true,
 terminal_colors = true,
 }
-colorscheme = "cyberdream",
-},
-{
+
 "mellow-theme/mellow.nvim",
+colorscheme = "mellow",
 init = function()
     vim.g.mellow_italic_comments = true
     vim.g.mellow_italic_keywords = false
@@ -316,40 +349,22 @@ init = function()
     vim.g.mellow_bold_variables = false
     vim.g.mellow_transparent = vim.g.transparent_enabled
 end,
-colorscheme = "mellow",
-},
-{
-"kihachi2000/yash.nvim",
-colorscheme = "yash",
-},
-{
-name = "nightfox",
-colorscheme = "nightfox",
-},
-{
+
+
 "sho-87/kanagawa-paper.nvim",
-local opts = {
-transparent = vim.g.transparent_enabled,
-}
 colorscheme = "kanagawa-paper",
-},
-{
-"eldritch-theme/eldritch.nvim",
 local opts = {
 transparent = vim.g.transparent_enabled,
 }
+
+"eldritch-theme/eldritch.nvim",
 colorscheme = "eldritch",
-},
-{
-"jim-at-jibba/ariake.nvim",
-colorscheme = "ariake",
-},
-{
-"Abstract-IDE/Abstract-cs",
-colorscheme = "abscs",
-},
-{
+local opts = {
+transparent = vim.g.transparent_enabled,
+}
+
 "comfysage/evergarden",
+colorscheme = "evergarden",
 local opts = {
 transparent_background = vim.g.transparent_enabled,
 contrast_dark = "hard",
@@ -357,26 +372,3 @@ contrast_dark = "hard",
 --contrast_dark = "soft",
 overrides = {},
 }
-colorscheme = "evergarden",
-},
-{
-"sekke276/dark_flat.nvim",
-local opts = {
-transparent = vim.g.transparent_enabled,
-colors = {},
-themes = function()
-    return {}
-end,
-italics = true,
-}
-colorscheme = "dark_flat",
-},
-{
-"Everblush/nvim",
-local opts = {
-override = {},
-transparent_background = vim.g.transparent_enabled,
-nvim_tree = {
-    contrast = false,
-},
-colorscheme = "everblush",
