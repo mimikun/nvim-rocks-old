@@ -725,6 +725,14 @@ colorscheme = [
 ]
 opt = true
 
+[plugins.witch]
+git = "github:sontungexpt/witch"
+colorscheme = [
+"witch-dark",
+"witch-light",
+]
+opt = true
+
 [plugins."nightfox.nvim"]
 version = "3.9.3"
 opt = true
@@ -843,17 +851,13 @@ git = "github:mellow-theme/mellow.nvim"
 colorscheme = "mellow"
 opt = true
 
-#--- witch_themes
-#colorscheme = [
-#"witch-dark",
-#"witch-light",
-#]
 #--- nightfall_themes
 #colorscheme = [
 #"nightfall",
 #"deeper-night",
 #"maron",
 #]
+
 #--- monokai_pro_themes
 #colorscheme = [
 #"monokai-pro",
@@ -864,11 +868,13 @@ opt = true
 #"monokai-pro-ristretto",
 #"monokai-pro-spectrum",
 #]
+
 #--- pastelnight_themes
 #colorscheme = [
 #"pastelnight",
 #"pastelnight-highcontrast",
 #]
+
 #--- lackluster_themes
 #colorscheme = [
 #"lackluster",

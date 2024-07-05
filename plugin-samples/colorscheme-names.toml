@@ -1,4 +1,3 @@
-
 #"pauchiner/pastelnight.nvim"
 #local opts = {
 #    transparent = vim.g.transparent_enabled,
@@ -24,5 +23,3 @@
 #        popup = "default",
 #    },
 #})
-
-#"sontungexpt/witch"
