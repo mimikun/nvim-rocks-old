@@ -778,7 +778,7 @@ git = "github:jim-at-jibba/ariake.nvim"
 colorscheme = "ariake"
 opt = true
 
-[plugins."/Abstract-cs"]
+[plugins."Abstract-cs"]
 git = "github:Abstract-IDE/Abstract-cs"
 colorscheme = "abscs"
 opt = true
@@ -889,4 +889,3 @@ opt = true
 #"deeper-night",
 #"maron",
 #]
-
