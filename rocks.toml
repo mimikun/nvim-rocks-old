@@ -81,7 +81,6 @@ tree-sitter-vue = "scm"
 tree-sitter-yaml = "scm"
 tree-sitter-zig = "scm"
 tree-sitter-just = "scm"
-"monokai.nvim" = "scm"
 ## NOTE: Linux or WSL only
 #tree-sitter-ocaml = "scm"
 #tree-sitter-ocaml_interface = "scm"
@@ -702,5 +701,15 @@ colorscheme = [
 "material-oceanic",
 "material-palenight",
 "material-deep-ocean",
+]
+opt = true
+
+[plugins."monokai.nvim"]
+version = "scm"
+colorscheme = [
+"monokai",
+"monokai_pro",
+"monokai_ristretto",
+"monokai_soda",
 ]
 opt = true
