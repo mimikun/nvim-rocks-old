@@ -842,3 +842,39 @@ opt = true
 git = "github:shrikecode/kyotonight.vim"
 colorscheme = "kyotonight"
 opt = true
+
+[plugins.neon]
+git = "github:rafamadriz/neon"
+colorscheme = "neon"
+opt = true
+
+[plugins."tokyodark.nvim"]
+git = "github:tiagovla/tokyodark.nvim"
+colorscheme = "tokyodark"
+opt = true
+
+[plugins."nord.nvim"]
+git = "github:shaunsingh/nord.nvim"
+colorscheme = "nord"
+opt = true
+
+[plugins."oldworld.nvim"]
+git = "dgox16/oldworld.nvim"
+colorscheme = "oldworld"
+opt = true
+
+[plugins."penumbra.nvim"]
+git = "github:Allianaab2m/penumbra.nvim"
+colorscheme = "penumbra"
+opt = true
+
+[plugins."cyberdream.nvim"]
+git = "github:scottmckendry/cyberdream.nvim"
+colorscheme = "cyberdream"
+opt = true
+
+[plugins."mellow.nvim"]
+git = "github:mellow-theme/mellow.nvim"
+colorscheme = "mellow"
+opt = true
+
