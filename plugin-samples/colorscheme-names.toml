@@ -168,7 +168,10 @@ local opts = {
     colorscheme = "nightfox",
 },
 {
-    name = "kanagawa-paper",
+"sho-87/kanagawa-paper.nvim",
+local opts = {
+    transparent = vim.g.transparent_enabled,
+}
     colorscheme = "kanagawa-paper",
 },
 {
@@ -462,24 +465,3 @@ local spec = {
 
 return spec
 ---@type table
-local opts = {
-    transparent = vim.g.transparent_enabled,
-}
-
----@type LazySpec
-local spec = {
-    "sho-87/kanagawa-paper.nvim",
-    --lazy = false,
-    opts = opts,
-    priority = 1000,
-    --cond = false,
-}
-
-return spec
--- NOTE: Not support "transparent = true"
----@type LazySpec
-local spec = {
-    --lazy = false,
-    priority = 1000,
-    --cond = false,
-}
