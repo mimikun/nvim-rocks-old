@@ -9,96 +9,30 @@ git = "github:tiagovla/tokyodark.nvim"
 colorscheme = "tokyodark"
 opt = true
 
-#cp colorscheme-names.toml 
-"shaunsingh/nord.nvim"
+[plugins."nord.nvim"]
+git = "github:shaunsingh/nord.nvim"
 colorscheme = "nord"
-config = function()
-    vim.g.nord_disable_background = vim.g.transparent_enabled
-end
+opt = true
 
-#cp colorscheme-names.toml 
-"dgox16/oldworld.nvim"
+[plugins."oldworld.nvim"]
+git = "dgox16/oldworld.nvim"
 colorscheme = "oldworld"
-local opts = {
--- enable terminal colors
-terminal_colors = true,
--- You can pass the style using the format: style = true
-styles = {
-    -- style for comments
-    comments = { italic = true },
-    -- style for keywords
-    keywords = {},
-    -- style for identifiers
-    identifiers = {},
-    -- style for functions
-    functions = { italic = true },
-    -- style for variables
-    variables = {},
-    -- style for booleans
-    booleans = {},
-},
--- You can disable/enable integrations
-integrations = {
-    alpha = true,
-    cmp = true,
-    flash = true,
-    gitsigns = true,
-    hop = false,
-    indent_blankline = true,
-    lazy = true,
-    lsp = true,
-    markdown = true,
-    mason = true,
-    navic = false,
-    neo_tree = false,
-    noice = true,
-    notify = true,
-    rainbow_delimiters = true,
-    telescope = true,
-    treesitter = true,
-},
-}
+opt = true
 
-#cp colorscheme-names.toml 
-"Allianaab2m/penumbra.nvim"
+[plugins."penumbra.nvim"]
+git = "github:Allianaab2m/penumbra.nvim"
 colorscheme = "penumbra"
-local opts = {
-italic_comment = false,
-transparent_bg = vim.g.transparent_enabled,
-show_end_of_buffer = false,
-light = false,
-contrast = nil,
---contrast = "plus",
---contrast = "plusplus",
-}
+opt = true
 
-#cp colorscheme-names.toml 
-"scottmckendry/cyberdream.nvim"
+[plugins."cyberdream.nvim"]
+git = "github:scottmckendry/cyberdream.nvim"
 colorscheme = "cyberdream"
-local opts = {
-transparent = vim.g.transparent_enabled,
-italic_comments = true,
-hide_fillchars = true,
-borderless_telescope = true,
-terminal_colors = true,
-}
+opt = true
 
-#cp colorscheme-names.toml 
-"mellow-theme/mellow.nvim"
+[plugins."mellow.nvim"]
+git = "github:mellow-theme/mellow.nvim"
 colorscheme = "mellow"
-init = function()
-    vim.g.mellow_italic_comments = true
-    vim.g.mellow_italic_keywords = false
-    vim.g.mellow_italic_booleans = false
-    vim.g.mellow_italic_functions = false
-    vim.g.mellow_italic_variables = false
-    vim.g.mellow_bold_comments = false
-    vim.g.mellow_bold_keywords = false
-    vim.g.mellow_bold_booleans = false
-    vim.g.mellow_bold_functions = false
-    vim.g.mellow_bold_variables = false
-    vim.g.mellow_transparent = vim.g.transparent_enabled
-end
+opt = true
 
 #"pauchiner/pastelnight.nvim"
 #local opts = {
@@ -147,3 +81,86 @@ end
 #require("tokyodark").setup({
 #    transparent_background = vim.g.transparent_enabled,
 #})
+
+#cp colorscheme-names.toml nord-nvim.lua
+# nord-nvim.lua
+#vim.g.nord_disable_background = vim.g.transparent_enabled
+
+#cp colorscheme-names.toml oldworld-nvim.lua
+# oldworld-nvim.lua
+#require("oldworld").setup({
+#    -- enable terminal colors
+#    terminal_colors = true,
+#    -- You can pass the style using the format: style = true
+#    styles = {
+#        -- style for comments
+#        comments = { italic = true },
+#        -- style for keywords
+#        keywords = {},
+#        -- style for identifiers
+#        identifiers = {},
+#        -- style for functions
+#        functions = { italic = true },
+#        -- style for variables
+#        variables = {},
+#        -- style for booleans
+#        booleans = {},
+#    },
+#    -- You can disable/enable integrations
+#    integrations = {
+#        alpha = true,
+#        cmp = true,
+#        flash = true,
+#        gitsigns = true,
+#        hop = false,
+#        indent_blankline = true,
+#        lazy = true,
+#        lsp = true,
+#        markdown = true,
+#        mason = true,
+#        navic = false,
+#        neo_tree = false,
+#        noice = true,
+#        notify = true,
+#        rainbow_delimiters = true,
+#        telescope = true,
+#        treesitter = true,
+#    },
+#})
+
+#cp colorscheme-names.toml penumbra-nvim
+# penumbra-nvim
+#require('penumbra').setup({
+#    italic_comment = false,
+#    transparent_bg = vim.g.transparent_enabled,
+#    show_end_of_buffer = false,
+#    light = false,
+#    contrast = nil,
+#    --contrast = "plus",
+#    --contrast = "plusplus",
+#})
+
+#cp colorscheme-names.toml cyberdream-nvim
+# cyberdream-nvim
+#require("cyberdream").setup({
+#    transparent = vim.g.transparent_enabled,
+#    italic_comments = true,
+#    hide_fillchars = true,
+#    borderless_telescope = true,
+#    terminal_colors = true,
+#})
+
+#cp colorscheme-names.toml mellow-nvim.lua
+# mellow-nvim.lua
+#vim.g.mellow_italic_comments = true
+#vim.g.mellow_italic_keywords = false
+#vim.g.mellow_italic_booleans = false
+#vim.g.mellow_italic_functions = false
+#vim.g.mellow_italic_variables = false
+#vim.g.mellow_bold_comments = false
+#vim.g.mellow_bold_keywords = false
+#vim.g.mellow_bold_booleans = false
+#vim.g.mellow_bold_functions = false
+#vim.g.mellow_bold_variables = false
+#vim.g.mellow_transparent = vim.g.transparent_enabled
+
