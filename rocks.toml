@@ -767,3 +767,78 @@ opt = true
 #"lackluster-mint",
 #"lackluster-night",
 #]
+
+[plugins."ariake.nvim"]
+git = "github:jim-at-jibba/ariake.nvim"
+colorscheme = "ariake"
+opt = true
+
+[plugins."/Abstract-cs"]
+git = "github:Abstract-IDE/Abstract-cs"
+colorscheme = "abscs"
+opt = true
+
+[plugins."yash.nvim"]
+git = "github:kihachi2000/yash.nvim"
+colorscheme = "yash"
+opt = true
+
+[plugins."kurayami.nvim"]
+git = "github:kevinm6/kurayami.nvim"
+colorscheme = "kurayami"
+opt = true
+
+[plugins."vim-dogrun"]
+git = "github:wadackel/vim-dogrun"
+colorscheme = "dogrun"
+opt = true
+
+[plugins.momiji]
+git = "github:kyoh86/momiji"
+colorscheme = "momiji"
+opt = true
+
+[plugins."kanagawa-paper.nvim"]
+git = "github:sho-87/kanagawa-paper.nvim"
+colorscheme = "kanagawa-paper"
+opt = true
+
+[plugins."fluoromachine.nvim"]
+git = "github:maxmx03/fluoromachine.nvim"
+colorscheme = "fluoromachine"
+opt = true
+
+[plugins."everblush"]
+git = "github:Everblush/nvim"
+colorscheme = "everblush"
+opt = true
+
+[plugins.evergarden]
+git = "github:comfysage/evergarden"
+colorscheme = "evergarden"
+opt = true
+
+[plugins."eldritch.nvim"]
+git = "github:eldritch-theme/eldritch.nvim"
+colorscheme = "eldritch"
+opt = true
+
+[plugins."dark_flat.nvim"]
+git = "github:sekke276/dark_flat.nvim"
+colorscheme = "dark_flat"
+opt = true
+
+[plugins.edge]
+git = "github:sainnhe/edge"
+colorscheme = "edge"
+opt = true
+
+[plugins.sonokai]
+git = "github:sainnhe/sonokai"
+colorscheme = "sonokai"
+opt = true
+
+[plugins."kyotonight.vim"]
+git = "github:shrikecode/kyotonight.vim"
+colorscheme = "kyotonight"
+opt = true
