@@ -1,14 +1,30 @@
-#"pauchiner/pastelnight.nvim"
-#local opts = {
+[plugins."lackluster.nvim"]
+git = "github:slugbyte/lackluster.nvim"
+opt = true
+
+[plugins."monokai-pro.nvim"]
+git = "github:loctvl842/monokai-pro.nvim"
+opt = true
+
+[plugins."pastelnight.nvim"]
+git = "github:pauchiner/pastelnight.nvim"
+opt = true
+
+# TODO: run its
+#cp colorscheme-names.toml pastelnight-nvim.lua
+# pastelnight-nvim.lua
+#require("pastelnight").setup({
 #    transparent = vim.g.transparent_enabled,
-#}
+#})
 
-#"loctvl842/monokai-pro.nvim"
-#local opts = {
+#cp colorscheme-names.toml monokai-pro-nvim.lua
+# monokai-pro-nvim.lua
+#require("monokai-pro").setup({
 #    transparent_background = vim.g.transparent_enabled,
-#}
+#})
 
-#"slugbyte/lackluster.nvim"
+#cp colorscheme-names.toml lackluster-nvim.lua
+# lackluster-nvim.lua
 #local lackluster = require("lackluster")
 #
 #lackluster.setup({
