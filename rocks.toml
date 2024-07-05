@@ -713,6 +713,7 @@ colorscheme = [
 "monokai_soda",
 ]
 opt = true
+
 #--- witch_themes
 #colorscheme = [
 #"witch-dark",
