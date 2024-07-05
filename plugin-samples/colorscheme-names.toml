@@ -1,31 +1,22 @@
+
 [plugins.neon]
 git = "github:rafamadriz/neon"
-#cp neon.lua
 colorscheme = "neon"
-config = function()
-    vim.g.neon_style = "default"
-    --vim.g.neon_style = "dark"
-    --vim.g.neon_style = "light"
-    vim.g.neon_italic_comment = false
-    vim.g.neon_italic_keyword = false
-    vim.g.neon_italic_boolean = false
-    vim.g.neon_italic_function = false
-    vim.g.neon_italic_variable = false
-    vim.g.neon_bold = false
-    vim.g.neon_transparent = vim.g.transparent_enabled
-end
-"tiagovla/tokyodark.nvim"
-colorscheme = "tokyodark"
-local opts = {
-transparent_background = vim.g.transparent_enabled,
-}
+opt = true
 
+[plugins."tokyodark.nvim"]
+git = "github:tiagovla/tokyodark.nvim"
+colorscheme = "tokyodark"
+opt = true
+
+#cp colorscheme-names.toml 
 "shaunsingh/nord.nvim"
 colorscheme = "nord"
 config = function()
     vim.g.nord_disable_background = vim.g.transparent_enabled
 end
 
+#cp colorscheme-names.toml 
 "dgox16/oldworld.nvim"
 colorscheme = "oldworld"
 local opts = {
@@ -68,6 +59,7 @@ integrations = {
 },
 }
 
+#cp colorscheme-names.toml 
 "Allianaab2m/penumbra.nvim"
 colorscheme = "penumbra"
 local opts = {
@@ -80,6 +72,7 @@ contrast = nil,
 --contrast = "plusplus",
 }
 
+#cp colorscheme-names.toml 
 "scottmckendry/cyberdream.nvim"
 colorscheme = "cyberdream"
 local opts = {
@@ -90,6 +83,7 @@ borderless_telescope = true,
 terminal_colors = true,
 }
 
+#cp colorscheme-names.toml 
 "mellow-theme/mellow.nvim"
 colorscheme = "mellow"
 init = function()
@@ -133,4 +127,23 @@ end
 #})
 
 #"sontungexpt/witch"
-colorscheme-names.toml
+
+# TODO: run its
+#cp colorscheme-names.toml neon.lua
+# neon.lua
+#vim.g.neon_style = "default"
+#--vim.g.neon_style = "dark"
+#--vim.g.neon_style = "light"
+#vim.g.neon_italic_comment = false
+#vim.g.neon_italic_keyword = false
+#vim.g.neon_italic_boolean = false
+#vim.g.neon_italic_function = false
+#vim.g.neon_italic_variable = false
+#vim.g.neon_bold = false
+#vim.g.neon_transparent = vim.g.transparent_enabled
+
+#cp colorscheme-names.toml tokyodark-nvim.lua
+# tokyodark-nvim.lua
+#require("tokyodark").setup({
+#    transparent_background = vim.g.transparent_enabled,
+#})
