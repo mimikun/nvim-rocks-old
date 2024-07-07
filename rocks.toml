@@ -370,17 +370,16 @@ cmd = "Oil"
 event = "DeferredUIEnter"
 opt = true
 
+[plugins."oil-git-status.nvim"]
+git = "github:refractalize/oil-git-status.nvim"
+opt = true
+
 # TODO: fix it
-## TODO:
-#[plugins."oil-git-status.nvim"]
-#git = "github:refractalize/oil-git-status.nvim"
-##opt = true
-#
-#[bundles.oil]
-#items = [
-#"oil.nvim",
-#"oil-git-status.nvim",
-#]
+[bundles.oil]
+items = [
+    "oil.nvim",
+    "oil-git-status.nvim",
+]
 
 # TODO: fix it
 ## NOTE: cond = false now
