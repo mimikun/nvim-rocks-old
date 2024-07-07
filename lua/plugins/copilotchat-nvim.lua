@@ -1,32 +1,4 @@
----@type table
-local cmds = {
-    "CopilotChat",
-    "CopilotChatOpen",
-    "CopilotChatClose",
-    "CopilotChatToggle",
-    "CopilotChatReset",
-    "CopilotChatSave",
-    "CopilotChatLoad",
-    "CopilotChatDebugInfo",
-    "CopilotChatExplain",
-    "CopilotChatReview",
-    "CopilotChatFix",
-    "CopilotChatOptimize",
-    "CopilotChatDocs",
-    "CopilotChatTests",
-    "CopilotChatFixDiagnostic",
-    "CopilotChatCommit",
-    "CopilotChatCommitStaged",
-}
-
----@type table
-local dependencies = {
-    "zbirenbaum/copilot.lua",
-    "nvim-lua/plenary.nvim",
-}
-
----@type table
-local opts = {
+require("CopilotChat").setup({
     -- Enable debug logging
     debug = false,
     -- [protocol://]host[:port] Use this proxy
@@ -173,17 +145,4 @@ local opts = {
             normal = "gs",
         },
     },
-}
-
----@type LazySpec
-local spec = {
-    "CopilotC-Nvim/CopilotChat.nvim",
-    branch = "canary",
-    --lazy = false,
-    cmd = cmds,
-    dependencies = dependencies,
-    opts = opts,
-    cond = require("core.settings").use_ai_assistant,
-}
-
-return spec
+})
