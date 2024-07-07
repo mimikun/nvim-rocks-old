@@ -1148,7 +1148,7 @@ opt = true
 #dependencies = { "akinsho/toggleterm.nvim" }
 #cond = (1 == vim.fn.executable("csvlens")) and true or false
 # NOTE: cond = false now
-[plugins."csvlens.nvim"]
-git = "github:theKnightsOfRohan/csvlens.nvim"
-cmd = "Csvlens"
-opt = true
+#[plugins."csvlens.nvim"]
+#git = "github:theKnightsOfRohan/csvlens.nvim"
+#cmd = "Csvlens"
+#opt = true
