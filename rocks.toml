@@ -85,7 +85,6 @@ tree-sitter-vue = "scm"
 tree-sitter-yaml = "scm"
 tree-sitter-zig = "scm"
 tree-sitter-just = "scm"
-"barbecue.nvim" = "scm"
 ## NOTE: Linux or WSL only
 #tree-sitter-ocaml = "scm"
 #tree-sitter-ocaml_interface = "scm"
@@ -1082,3 +1081,13 @@ opt = true
 #event = [ "BufReadPre", "BufNewFile" ]
 #opt = true
 
+#dependencies = {
+#    "SmiteshP/nvim-navic",
+#    "nvim-tree/nvim-web-devicons",
+#}
+# NOTE: cond = false now
+#[plugins."barbecue.nvim"]
+#version = "scm"
+#cmd = "Barbecue"
+#event = ["BufReadPre", "BufNewFile"]
+#opt = true

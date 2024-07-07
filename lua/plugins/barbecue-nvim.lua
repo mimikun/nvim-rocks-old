@@ -1,5 +1,5 @@
 -- TODO: Use utils/icons.lua
-{
+require("barbecue").setup({
     symbols = {
         modified = "●",
         ellipsis = "…",
@@ -33,4 +33,4 @@
         Operator = "",
         TypeParameter = "",
     },
-}
+})
