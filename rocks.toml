@@ -951,3 +951,22 @@ cmd = [
 ]
 opt = true
 
+# dependencies = { "nvim-lua/plenary.nvim" }
+[plugins."silicon.nvim"]
+git = "github:mimikun/silicon.nvim"
+opt = true
+
+# dependencies = { "nvim-lua/plenary.nvim" }
+[plugins."todo-comments.nvim"]
+version = "1.2.0"
+event = ["BufReadPost", "BufNewFile"]
+opt = true
+
+# dependencies = { "nvim-lua/plenary.nvim" }
+[plugins."yazi.nvim"]
+version = "master"
+keys = [
+    { lhs = "<leader>-", desc = "Open the file manager" },
+]
+event = "DeferredUIEnter"
+opt = true

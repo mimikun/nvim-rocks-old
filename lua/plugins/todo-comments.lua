@@ -7,8 +7,7 @@ local icons = {
     misc = iconsets.get("misc"),
 }
 
----@type table
-local opts = {
+require("todo-comments").setup({
     signs = true,
     sign_priority = 8,
     keywords = {
@@ -61,16 +60,4 @@ local opts = {
         -- ripgrep regex
         pattern = [[\b(KEYWORDS):]],
     },
-}
-
----@type LazySpec
-local spec = {
-    "folke/todo-comments.nvim",
-    --lazy = false,
-    event = { "BufReadPost", "BufNewFile" },
-    dependencies = { "nvim-lua/plenary.nvim" },
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+})
