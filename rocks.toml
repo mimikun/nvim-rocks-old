@@ -1101,3 +1101,5 @@ opt = true
 #cmd = "Copilot"
 #opt = true
 
+[plugins."chatgpt.nvim"]
+version = "scm"
