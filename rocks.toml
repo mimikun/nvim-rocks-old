@@ -1156,3 +1156,7 @@ git = "github:vim-skk/eskk.vim"
 keys = [
     { lhs = "<C-j>", desc = "Toggle Kana-mode eskk.vim" },
 ]
+[plugins."nvim-ghost.nvim"]
+git = "github:subnut/nvim-ghost.nvim"
+cmd = "GhostTextStart"
+opt = true
