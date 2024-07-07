@@ -25,6 +25,7 @@ colorscheme = "kanagawa-wave"
 "plenary.nvim" = "scm"
 "nui.nvim" = "0.3.0"
 "toggleterm.nvim" = "2.11.0"
+nvim-web-devicons = "0.100"
 # NOTE: tree-sitter parsers
 tree-sitter-bash = "scm"
 tree-sitter-c = "scm"
