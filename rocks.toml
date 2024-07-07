@@ -1181,3 +1181,35 @@ git = "github:jay-babu/mason-null-ls.nvim"
 event = ["BufReadPre", "BufNewFile"]
 opt = true
 
+[plugins."lspsaga.nvim"]
+version = "scm"
+opt = true
+
+# dependencies = {
+#     "nvimdev/lspsaga.nvim",
+#     "nvim-treesitter/nvim-treesitter",
+#     "nvim-tree/nvim-web-devicons",
+# }
+#"neovim/nvim-lspconfig",
+[plugins.nvim-lspconfig]
+version = "0.1.8"
+keys = [
+    { lhs = "<space>e", desc = "vim.diagnostic.open_float" },
+    { lhs = "[d", desc = "vim.diagnostic.goto_prev" },
+    { lhs = "]d", desc = "vim.diagnostic.goto_next" },
+    { lhs = "<space>q", desc = "vim.diagnostic.setloclist" },
+    { lhs = "gD", desc = "vim.lsp.buf.declaration" },
+    { lhs = "gd", desc = "vim.lsp.buf.definition" },
+    { lhs = "K", desc = "vim.lsp.buf.hover" },
+    { lhs = "gi", desc = "vim.lsp.buf.implementation" },
+    { lhs = "<C-k>", desc = "vim.lsp.buf.signature_help" },
+    { lhs = "<space>wa", desc = "vim.lsp.buf.add_workspace_folder" },
+    { lhs = "<space>wr", desc = "vim.lsp.buf.remove_workspace_folder" },
+    { lhs = "<space>wl", desc = "vim.inspect(vim.lsp.buf.list_workspace_folders())" },
+    { lhs = "<space>D", desc = "vim.lsp.buf.type_definition" },
+    { lhs = "<space>rn", desc = "vim.lsp.buf.rename" },
+    { lhs = "<space>ca", desc = "vim.lsp.buf.code_action" },
+    { lhs = "gr", desc = "vim.lsp.buf.references" },
+    { lhs = "<space>f", desc = "vim.lsp.buf.format({ async = true })" },
+]
+
