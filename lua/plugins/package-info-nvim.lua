@@ -2,7 +2,7 @@
 ---@type string
 local use_pm = "pnpm"
 
-require('package-info').setup({
+require("package-info").setup({
     icons = {
         enable = true,
         style = {

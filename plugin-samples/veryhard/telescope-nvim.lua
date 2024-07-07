@@ -19,13 +19,11 @@ local keys = {
 
 ---@type LazySpec[]
 local dependencies = {
-    # --    "nvim-lua/plenary.nvim","nvim-telescope/telescope-frecency.nvim","danielfalk/smart-open.nvim","ghassan0/telescope-glyph.nvim",
-    "xiyaowong/telescope-emoji.nvim",
+    # --    "nvim-lua/plenary.nvim","nvim-telescope/telescope-frecency.nvim","danielfalk/smart-open.nvim","ghassan0/telescope-glyph.nvim","xiyaowong/telescope-emoji.nvim",
     "tsakirist/telescope-lazy.nvim",
     "fdschmidt93/telescope-egrepify.nvim",
     "nvim-telescope/telescope-file-browser.nvim",
-    # -- "vuki656/package-info.nvim","tiagovla/scope.nvim","nvim-lua/popup.nvim","jvgrootveld/telescope-zoxide",
-    "debugloop/telescope-undo.nvim",
+    # -- "vuki656/package-info.nvim","tiagovla/scope.nvim","nvim-lua/popup.nvim","jvgrootveld/telescope-zoxide","debugloop/telescope-undo.nvim",
     "epwalsh/pomo.nvim",
 }
 
