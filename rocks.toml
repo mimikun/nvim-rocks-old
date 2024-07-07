@@ -940,3 +940,14 @@ opt = true
 git = "saecki/crates.nvim"
 event = ["BufRead Cargo.toml"]
 opt = true
+
+# dependencies = { "nvim-lua/plenary.nvim" }
+[plugins."hawtkeys.nvim"]
+git = "tris203/hawtkeys.nvim"
+cmd = [
+    "Hawtkeys",
+    "HawtkeysAll",
+    "HawtkeysDupes",
+]
+opt = true
+
