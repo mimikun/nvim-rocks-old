@@ -922,3 +922,19 @@ opt = true
 #"maron",
 #]
 
+[plugins.vim-toml]
+git = "github:cespare/vim-toml"
+opt = true
+
+[plugins.vim-duckscript]
+git = "github:nastevens/vim-duckscript"
+opt = true
+
+# dependencies = {
+# "cespare/vim-toml",
+# "nastevens/vim-duckscript",
+# }
+[plugins.vim-cargo-make]
+git = "github:nastevens/vim-cargo-make"
+ft = "cargo-make"
+opt = true
