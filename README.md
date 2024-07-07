@@ -8,3 +8,7 @@ nvim -u NORC -c "source https://raw.githubusercontent.com/nvim-neorocks/rocks.nv
 # Set up luarocks (recommended) ?: false
 set -Ux NVIM_APPNAME nvim-rocks
 ```
+
+## Note
+
+denopsなど主流ではない技術のプラグインは使わない
