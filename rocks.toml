@@ -85,6 +85,7 @@ tree-sitter-vue = "scm"
 tree-sitter-yaml = "scm"
 tree-sitter-zig = "scm"
 tree-sitter-just = "scm"
+"fidget.nvim" = "1.4.1"
 ## NOTE: Linux or WSL only
 #tree-sitter-ocaml = "scm"
 #tree-sitter-ocaml_interface = "scm"
