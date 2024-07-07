@@ -53,6 +53,7 @@ local buttons = {
         --dashboard.button("e", new_file, ":ene <BAR> startinsert <CR>"),
         --dashboard.button("f", search_files, "<cmd>Telescope smart_open<CR>"),
         --dashboard.button("r", show_mru, "<cmd>Telescope oldfiles<CR>"),
+        dashboard.button(".", run_oil, "<cmd>Oil<CR>"),
         dashboard.button("u", update_plugins, "<cmd>Rocks sync<CR>"),
         --dashboard.button("m", open_mason_window, "<cmd>Mason<CR>"),
         --dashboard.button("t", ts_update, "<cmd>TSUpdate<CR>"),
