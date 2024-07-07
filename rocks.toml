@@ -1023,3 +1023,22 @@ keys = [
 ]
 opt = true
 
+# dependencies = {
+#     "nvim-lua/plenary.nvim",
+#     "rcarriga/nvim-notify",
+#     "kkharji/sqlite.lua",
+# }
+[plugins."mastodon.nvim"]
+git = "github:kode-team/mastodon.nvim"
+cmd = [
+    "MastodonTootMessage",
+    "MastodonAddAccount",
+    "MastodonSelectAccount",
+    "MastodonLoadHomeTimeline",
+    "MastodonLoadBookmarks",
+    "MastodonLoadFavourites",
+    "MastodonLoadReplies",
+    "MastodonReload",
+]
+opt = true
+
