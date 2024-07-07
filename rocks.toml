@@ -1150,24 +1150,3 @@ opt = true
 #git = "github:theKnightsOfRohan/csvlens.nvim"
 #cmd = "Csvlens"
 #opt = true
-# NOTE: cond = require("core.global").is_human_rights
-# dependencies = {
-#     "vim-denops/denops-shared-server.vim",
-#     "yuki-yano/denops-lazy.nvim",
-# }
-#[plugins."denops-shared-server.vim"]
-#git = "github:vim-denops/denops-shared-server.vim"
-#
-#[plugins."denops-lazy.nvim"]
-#git = "github:yuki-yano/denops-lazy.nvim"
-#
-#[plugins."denops.vim"]
-#git = "github:vim-denops/denops.vim"
-#opt = true
-#
-#[bundles."denops-vim"]
-#items = [
-#    "denops-shared-server.vim",
-#    "denops-lazy.nvim",
-#    "denops.vim",
-#]
