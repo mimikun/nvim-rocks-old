@@ -884,9 +884,41 @@ git = "github:mellow-theme/mellow.nvim"
 colorscheme = "mellow"
 opt = true
 
+# dependencies = { "rktjmp/lush.nvim" }
+[plugins."lush.nvim"]
+version = "scm"
+colorscheme = "lavi"
+opt = true
+
+[plugins."polychrome.nvim"]
+git = "github:loganswartz/polychrome.nvim"
+opt = true
+
+# dependencies = { "loganswartz/polychrome.nvim" }
+[plugins."sunburn.nvim"]
+git = "github:loganswartz/sunburn.nvim"
+colorscheme = "sunburn"
+opt = true
+
+[plugins.nvim-highlite]
+git = "github:Iron-E/nvim-highlite"
+opt = true
+
+# dependencies = { "Iron-E/nvim-highlite" }
+[plugins.nvim-srcerite]
+git = "github:m15a/nvim-srcerite"
+colorscheme = "srcerite"
+opt = true
+
+# touch nvim-srcerite
+#vim.g.srcerite_inverse_visual = true
+#vim.g.srcerite_inverse_search = false
+#vim.g.srcerite_inverse_match_paren = false
+
 #--- nightfall_themes
 #colorscheme = [
 #"nightfall",
 #"deeper-night",
 #"maron",
 #]
+
