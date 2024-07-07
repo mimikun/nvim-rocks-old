@@ -1150,3 +1150,9 @@ opt = true
 #git = "github:theKnightsOfRohan/csvlens.nvim"
 #cmd = "Csvlens"
 #opt = true
+
+[plugins."eskk.vim"]
+git = "github:vim-skk/eskk.vim"
+keys = [
+    { lhs = "<C-j>", desc = "Toggle Kana-mode eskk.vim" },
+]
