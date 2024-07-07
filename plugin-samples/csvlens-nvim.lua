@@ -1,9 +1,3 @@
--- Enable if executable csvlens command
----@type boolean
-local has_csvlens = (1 == vim.fn.executable("csvlens")) and true or false
----@type boolean
-local cond = has_csvlens
-
 ---@type table
 local opts = {
     -- "float" | "vertical" | "horizontal" |  "tab"
@@ -21,7 +15,7 @@ local spec = {
     cmd = "Csvlens",
     dependencies = { "akinsho/toggleterm.nvim" },
     opts = opts,
-    cond = cond,
+    cond = (1 == vim.fn.executable("csvlens")) and true or false,
 }
 
 return spec
