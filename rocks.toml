@@ -85,6 +85,7 @@ tree-sitter-vue = "scm"
 tree-sitter-yaml = "scm"
 tree-sitter-zig = "scm"
 tree-sitter-just = "scm"
+"barbecue.nvim" = "scm"
 ## NOTE: Linux or WSL only
 #tree-sitter-ocaml = "scm"
 #tree-sitter-ocaml_interface = "scm"
@@ -1069,5 +1070,15 @@ opt = true
 #    "SClose",
 #]
 #event = "VimEnter"
+#opt = true
+
+# dependencies = {
+#     "lewis6991/gitsigns.nvim",
+#     "nvim-tree/nvim-web-devicons",
+# }
+# NOTE: cond = false now
+#[plugins."barbar.nvim"]
+#git = "github:romgrk/barbar.nvim"
+#event = [ "BufReadPre", "BufNewFile" ]
 #opt = true
 

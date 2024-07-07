@@ -1,18 +1,5 @@
----@type table
-local events = {
-    "BufReadPre",
-    "BufNewFile",
-}
-
----@type table
-local dependencies = {
-    "SmiteshP/nvim-navic",
-    "nvim-tree/nvim-web-devicons",
-}
-
 -- TODO: Use utils/icons.lua
----@type table
-local opts = {
+{
     symbols = {
         modified = "●",
         ellipsis = "…",
@@ -47,18 +34,3 @@ local opts = {
         TypeParameter = "",
     },
 }
-
----@type LazySpec
-local spec = {
-    "utilyre/barbecue.nvim",
-    name = "barbecue",
-    version = "*",
-    --lazy = false,
-    cmd = "Barbecue",
-    event = events,
-    dependencies = dependencies,
-    opts = opts,
-    cond = false,
-}
-
-return spec
