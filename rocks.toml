@@ -22,6 +22,7 @@ colorscheme = "kanagawa-wave"
 # NOTE: zero-config plugins
 "dressing.nvim" = "2.2.2"
 "neoscroll.nvim" = "0.2.0"
+"plenary.nvim" = "scm"
 # NOTE: tree-sitter parsers
 tree-sitter-bash = "scm"
 tree-sitter-c = "scm"
