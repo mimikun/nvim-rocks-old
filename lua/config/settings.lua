@@ -6,11 +6,6 @@ local settings = {}
 ---@type boolean
 settings["use_ai_assistant"] = false
 
----Set to use denops
---- NOTE: require human rights
----@type boolean
-settings["use_denops"] = false
-
 ---Set theme switcher
 --- NOTE: huez.nvim is beta
 ---@type string
