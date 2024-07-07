@@ -1,0 +1,8 @@
+#dependencies = {
+#    "MunifTanjim/nui.nvim",
+#    "rcarriga/nvim-notify",
+#    "hrsh7th/nvim-cmp",
+#}
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opt = true

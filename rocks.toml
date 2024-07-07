@@ -977,3 +977,17 @@ opt = true
 version = "2.0"
 event = ["BufRead package.json"]
 opt = true
+
+[plugins.nvim-notify]
+version = "3.13.5"
+opt = true
+
+#dependencies = {
+#    "MunifTanjim/nui.nvim",
+#    "rcarriga/nvim-notify",
+#    "hrsh7th/nvim-cmp",
+#}
+[plugins."noice.nvim"]
+version = "4.4.0"
+event = "DeferredUIEnter"
+opt = true
