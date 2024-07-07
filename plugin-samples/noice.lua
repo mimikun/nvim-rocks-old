@@ -1,9 +1,8 @@
----@type table
-local dependencies = {
-    "MunifTanjim/nui.nvim",
-    "rcarriga/nvim-notify",
-    "hrsh7th/nvim-cmp",
-}
+#dependencies = {
+#    "MunifTanjim/nui.nvim",
+#    "rcarriga/nvim-notify",
+#    "hrsh7th/nvim-cmp",
+#}
 
 ---@type table
 local opts = {

@@ -23,6 +23,7 @@ colorscheme = "kanagawa-wave"
 "dressing.nvim" = "2.2.2"
 "neoscroll.nvim" = "0.2.0"
 "plenary.nvim" = "scm"
+"nui.nvim" = "0.3.0"
 # NOTE: tree-sitter parsers
 tree-sitter-bash = "scm"
 tree-sitter-c = "scm"
@@ -969,4 +970,10 @@ keys = [
     { lhs = "<leader>-", desc = "Open the file manager" },
 ]
 event = "DeferredUIEnter"
+opt = true
+
+# dependencies = { "MunifTanjim/nui.nvim" }
+[plugins."package-info.nvim"]
+version = "2.0"
+event = ["BufRead package.json"]
 opt = true
