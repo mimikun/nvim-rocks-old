@@ -1009,3 +1009,17 @@ opt = true
 git = "github:obaland/vfiler.vim"
 cmd = "VFiler"
 opt = true
+
+# dependencies = { "MunifTanjim/nui.nvim" }
+[plugins."convert.nvim"]
+git = "github:cjodo/convert.nvim"
+cmd = [
+    "ConvertFindNext",
+    "ConvertFindCurrent",
+]
+keys = [
+    { lhs = "<leader>cn", desc = "Find next convertible unit" },
+    { lhs = "<leader>cc", desc = "Find convertible unit in current line" },
+]
+opt = true
+
