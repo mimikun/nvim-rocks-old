@@ -1120,3 +1120,27 @@ opt = true
 #event = "DeferredUIEnter"
 #opt = true
 
+# cond = require("core.settings").use_ai_assistant
+# NOTE: cond = false now
+#[plugins."CopilotChat.nvim"]
+#git = "github:CopilotC-Nvim/CopilotChat.nvim"
+#cmd = [
+#    "CopilotChat",
+#    "CopilotChatOpen",
+#    "CopilotChatClose",
+#    "CopilotChatToggle",
+#    "CopilotChatReset",
+#    "CopilotChatSave",
+#    "CopilotChatLoad",
+#    "CopilotChatDebugInfo",
+#    "CopilotChatExplain",
+#    "CopilotChatReview",
+#    "CopilotChatFix",
+#    "CopilotChatOptimize",
+#    "CopilotChatDocs",
+#    "CopilotChatTests",
+#    "CopilotChatFixDiagnostic",
+#    "CopilotChatCommit",
+#    "CopilotChatCommitStaged",
+#]
+#opt = true
