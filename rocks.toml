@@ -1156,10 +1156,13 @@ git = "github:vim-skk/eskk.vim"
 keys = [
     { lhs = "<C-j>", desc = "Toggle Kana-mode eskk.vim" },
 ]
+
 [plugins."nvim-ghost.nvim"]
 git = "github:subnut/nvim-ghost.nvim"
 cmd = "GhostTextStart"
 opt = true
+
 #cond = (1 == vim.fn.executable("cmigemo")) and true or false
-[plugins."migemo-search.vim"]
-git = "github:rhysd/migemo-search.vim"
+# TODO: cond = false
+#[plugins."migemo-search.vim"]
+#git = "github:rhysd/migemo-search.vim"
