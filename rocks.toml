@@ -1042,3 +1042,18 @@ cmd = [
 ]
 opt = true
 
+# dependencies = { "rcarriga/nvim-notify" }
+[plugins."pomo.nvim"]
+git = "github:epwalsh/pomo.nvim"
+cmd = [
+    "TimerStart",
+    "TimerStop",
+    "TimerRepeat",
+    "TimerRepeat",
+    "TimerHide",
+    "TimerShow",
+    "TimerPause",
+    "TimerResume",
+]
+opt = true
+
