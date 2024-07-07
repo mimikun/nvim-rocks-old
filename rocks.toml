@@ -1166,3 +1166,8 @@ opt = true
 # TODO: cond = false
 #[plugins."migemo-search.vim"]
 #git = "github:rhysd/migemo-search.vim"
+
+#dependencies = { "nvim-lua/plenary.nvim" }
+[plugins."none-ls.nvim"]
+version = "scm"
+opt = true
