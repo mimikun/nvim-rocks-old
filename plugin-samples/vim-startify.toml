@@ -1,0 +1,11 @@
+[plugins.vim-startify]
+git = "github:mhinz/vim-startify"
+cmd = [
+    "Startify",
+    "SLoad",
+    "SSave",
+    "SDelete",
+    "SClose",
+]
+event = "VimEnter"
+opt = true
