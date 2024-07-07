@@ -161,4 +161,4 @@ require("oil").setup({
         border = "rounded",
     },
 })
---require("oil-git-status").setup({})
+require("oil-git-status").setup({})
