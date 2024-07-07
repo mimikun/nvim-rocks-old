@@ -25,6 +25,7 @@ colorscheme = "kanagawa-wave"
 "plenary.nvim" = "scm"
 "nui.nvim" = "0.3.0"
 "toggleterm.nvim" = "2.11.0"
+"fidget.nvim" = "1.4.1"
 nvim-web-devicons = "0.100"
 # NOTE: tree-sitter parsers
 tree-sitter-bash = "scm"
@@ -85,7 +86,6 @@ tree-sitter-vue = "scm"
 tree-sitter-yaml = "scm"
 tree-sitter-zig = "scm"
 tree-sitter-just = "scm"
-"fidget.nvim" = "1.4.1"
 ## NOTE: Linux or WSL only
 #tree-sitter-ocaml = "scm"
 #tree-sitter-ocaml_interface = "scm"
@@ -1092,3 +1092,12 @@ opt = true
 #cmd = "Barbecue"
 #event = ["BufReadPre", "BufNewFile"]
 #opt = true
+
+#cond = require("core.settings").use_ai_assistant,
+# NOTE: cond = false now
+#[plugins."copilot.lua"]
+#version = "scm"
+#event = "InsertEnter"
+#cmd = "Copilot"
+#opt = true
+

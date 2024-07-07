@@ -1,0 +1,4 @@
+#cond = require("core.settings").use_ai_assistant,
+event = "InsertEnter"
+cmd = "Copilot"
+opt = true

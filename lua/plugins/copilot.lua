@@ -1,5 +1,4 @@
----@type table
-local opts = {
+require("copilot").setup({
     panel = {
         enabled = true,
         auto_refresh = false,
@@ -43,16 +42,4 @@ local opts = {
     -- Node.js version must be > 18.x
     copilot_node_command = "node",
     server_opts_overrides = {},
-}
-
----@type LazySpec
-local spec = {
-    "zbirenbaum/copilot.lua",
-    --lazy = false,
-    event = "InsertEnter",
-    cmd = "Copilot",
-    opts = opts,
-    cond = require("core.settings").use_ai_assistant,
-}
-
-return spec
+})
