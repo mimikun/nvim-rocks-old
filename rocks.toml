@@ -24,6 +24,7 @@ colorscheme = "kanagawa-wave"
 "neoscroll.nvim" = "0.2.0"
 "plenary.nvim" = "scm"
 "nui.nvim" = "0.3.0"
+"toggleterm.nvim" = "2.11.0"
 # NOTE: tree-sitter parsers
 tree-sitter-bash = "scm"
 tree-sitter-c = "scm"
@@ -83,7 +84,6 @@ tree-sitter-vue = "scm"
 tree-sitter-yaml = "scm"
 tree-sitter-zig = "scm"
 tree-sitter-just = "scm"
-"toggleterm.nvim" = "2.11.0"
 ## NOTE: Linux or WSL only
 #tree-sitter-ocaml = "scm"
 #tree-sitter-ocaml_interface = "scm"
@@ -939,13 +939,13 @@ opt = true
 
 # dependencies = { "nvim-lua/plenary.nvim" }
 [plugins."crates.nvim"]
-git = "saecki/crates.nvim"
+git = "github:saecki/crates.nvim"
 event = ["BufRead Cargo.toml"]
 opt = true
 
 # dependencies = { "nvim-lua/plenary.nvim" }
 [plugins."hawtkeys.nvim"]
-git = "tris203/hawtkeys.nvim"
+git = "github:tris203/hawtkeys.nvim"
 cmd = [
     "Hawtkeys",
     "HawtkeysAll",
@@ -991,4 +991,11 @@ opt = true
 [plugins."noice.nvim"]
 version = "4.4.0"
 event = "DeferredUIEnter"
+opt = true
+
+# dependencies = { "akinsho/toggleterm.nvim" }
+[plugins."lazydocker.nvim"]
+git = "github:mgierada/lazydocker.nvim"
+cmd = "Lazydocker"
+event = "BufRead"
 opt = true
