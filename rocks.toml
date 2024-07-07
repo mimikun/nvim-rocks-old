@@ -999,3 +999,13 @@ git = "github:mgierada/lazydocker.nvim"
 cmd = "Lazydocker"
 event = "BufRead"
 opt = true
+
+[plugins.vfiler-column-devicons]
+git = "github:obaland/vfiler-column-devicons"
+opt = true
+
+# dependencies = "obaland/vfiler-column-devicons"
+[plugins."vfiler.vim"]
+git = "github:obaland/vfiler.vim"
+cmd = "VFiler"
+opt = true
