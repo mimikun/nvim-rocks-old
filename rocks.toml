@@ -366,6 +366,7 @@ opt = true
 [plugins."oil.nvim"]
 version = "2.10.0"
 cmd = "Oil"
+event = "DeferredUIEnter"
 opt = true
 
 # TODO: fix it
