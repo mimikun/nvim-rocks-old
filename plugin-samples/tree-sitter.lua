@@ -56,9 +56,23 @@ local spec = {
             },
         })
 
-        parser_config.powershell = sources.powershell
-        parser_config.just = sources.just
-        parser_config.vhs = sources.vhs
+        parser_config.powershell = {
+            install_info = {
+                url = "https://github.com/mimikun/tree-sitter-PowerShell",
+                files = { "src/parser.c" },
+                branch = "test",
+            },
+            filetype = { "ps1", "psd1" },
+        }
+
+        parser_config.vhs = {
+            install_info = {
+                url = "https://github.com/charmbracelet/tree-sitter-vhs",
+                files = { "src/parser.c" },
+                branch = "main",
+            },
+            filetype = { "tape" },
+        }
     end,
     --cond = false,
 }
