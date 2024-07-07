@@ -117,9 +117,9 @@ git = "github:mattn/calendar-vim"
 cmd = "Calendar"
 opt = true
 
+# TODO: fix it
 [plugins."vimdoc-ja"]
 git = "github:vim-jp/vimdoc-ja"
-# TODO: Fix it
 #keys = [
 #  { lhs = "h", mode = "c", desc = "open [H]elp" },
 #]
@@ -127,7 +127,6 @@ git = "github:vim-jp/vimdoc-ja"
 
 [plugins."vim-ambiwidth"]
 git = "github:rbtnn/vim-ambiwidth"
-#opt = true
 
 [plugins."vim-just"]
 git = "github:NoahTheDuke/vim-just"
@@ -154,11 +153,10 @@ git = "github:imsnif/kdl.vim"
 ft = "kdl"
 opt = true
 
-[plugins."chezmoi.vim"]
-git = "github:alker0/chezmoi.vim"
 # this plugin DO NOT lazy loading
 # see: https://github.com/alker0/chezmoi.vim#install
-#opt = true
+[plugins."chezmoi.vim"]
+git = "github:alker0/chezmoi.vim"
 
 [plugins."align.nvim"]
 git = "github:Vonr/align.nvim"
@@ -176,13 +174,12 @@ opt = true
 
 [plugins."satellite.nvim"]
 git = "github:lewis6991/satellite.nvim"
-#opt = true
 
+# TODO: fix it
 # NOTE: cond = false now
 #[plugins."modeline.nvim"]
 #git = "github:nvimdev/modeline.nvim"
 #event = ["BufReadPre", "BufNewFile"]
-#opt = true
 
 [plugins."modes.nvim"]
 git = "github:mvllow/modes.nvim"
@@ -216,11 +213,9 @@ git = "github:kevinhwang91/nvim-hlslens"
 keys = [
   {lhs = "<leader>l", desc ="run `:nohlsearch` and export results to quickfix"},
 ]
-#opt = true
 
 [plugins.nvim-insx]
 git = "github:hrsh7th/nvim-insx"
-#opt = true
 
 [plugins."overseer.nvim"]
 version = "1.4.0"
@@ -265,6 +260,7 @@ version = "2.1.0"
 cmd = "Screenkey"
 opt = true
 
+# TODO: fix it
 # NOTE: cond = false now
 #[plugins."staline.nvim"]
 #version = "scm"
@@ -281,6 +277,7 @@ version = "2.1.0"
 event = "DeferredUIEnter"
 opt = true
 
+# TODO: fix it
 # NOTE: cond = false now
 #[plugins."windline.nvim"]
 #version = "1.1.0"
@@ -326,7 +323,6 @@ opt = true
 [plugins."template.nvim"]
 git = "github:nvimdev/template.nvim"
 cmd = "Template"
-#opt = true
 
 [plugins."typos.nvim"]
 git = "github:poljar/typos.nvim"
@@ -344,7 +340,6 @@ opt = true
 
 [plugins."bufferline.nvim"]
 version = "4.6.1"
-#dependencies = { "nvim-tree/nvim-web-devicons" },
 event = ["BufReadPre", "BufNewFile"]
 cmd = [
     "BufferLineTabRename",
@@ -371,6 +366,7 @@ version = "2.10.0"
 cmd = "Oil"
 opt = true
 
+# TODO: fix it
 ## TODO:
 #[plugins."oil-git-status.nvim"]
 #git = "github:refractalize/oil-git-status.nvim"
@@ -382,6 +378,7 @@ opt = true
 #"oil-git-status.nvim",
 #]
 
+# TODO: fix it
 ## NOTE: cond = false now
 #[plugins.dashboard-nvim]
 #version = "scm"
@@ -394,6 +391,7 @@ opt = true
 ##opt = true
 ##dependencies = { "nvim-tree/nvim-web-devicons" },
 
+# TODO: fix it
 ## NOTE: cond = false now
 #[plugins."dial.nvim"]
 #version = "0.4.0"
@@ -414,6 +412,7 @@ version = "scm"
 event = "BufRead"
 opt = true
 
+# TODO: fix it
 ## NOTE: cond = false now
 #[plugins."flash.nvim"]
 #version = "1.18.3"
@@ -433,13 +432,14 @@ opt = true
 version = "scm"
 opt = true
 
+# TODO: fix it
 ## NOTE: cond = false now
 #[plugins."heirline.nvim"]
 #version = "1.0.6"
 #event = "UIEnter"
 #opt = true
 
-[plugins."hover.nvim"] 
+[plugins."hover.nvim"]
 version = "scm"
 keys = [
     { lhs = "K", desc = "hover.nvim" },
@@ -450,6 +450,7 @@ keys = [
 ]
 opt = true
 
+# TODO: fix it
 ## NOTE: cond = false now
 #[plugins."incline.nvim"]
 #version = "0.0.1"
@@ -467,7 +468,6 @@ cmd = [
     "IBLToggleScope",
 ]
 event = "VimEnter"
-#opt = true
 
 [plugins."lazygit.nvim"]
 version = "scm"
@@ -485,6 +485,7 @@ version = "scm"
 event = [ "BufReadPre", "BufNewFile" ]
 opt = true
 
+# TODO: fix it
 ## NOTE: cond = false now
 #[plugins.nvim-scrollbar]
 #version = "scm"
@@ -512,6 +513,7 @@ keys = [
 ]
 opt = true
 
+# TODO: fix it
 ## WARN: deprecated error
 #[plugins."ccc.nvim"]
 #git = "github:uga-rosa/ccc.nvim"
@@ -525,7 +527,6 @@ opt = true
 
 [plugins."comment.nvim"]
 version = "0.8.0"
-#git = "github:numToStr/Comment.nvim"
 event = "BufRead"
 opt = true
 
@@ -553,13 +554,11 @@ opt = true
 
 [plugins."glow.nvim"]
 version = "0.2.0"
-#git = "github:ellisonleao/glow.nvim"
 cmd = "Glow"
 opt = true
 
 [plugins."2048.nvim"]
 version = "2.8.2"
-#git = "github:NStefan002/2048.nvim"
 cmd = "Play2048"
 opt = true
 
@@ -570,7 +569,6 @@ opt = true
 
 [plugins."marks.nvim"]
 version = "scm"
-#git = "github:chentoast/marks.nvim"
 cmd = [
     "MarksToggleSigns",
     "MarksListBuf",
@@ -586,6 +584,7 @@ cmd = [
 ]
 opt = true
 
+# TODO: fix it
 ## NOTE: cond = false now
 #[plugins."drop.nvim"]
 #git = "github:folke/drop.nvim"
@@ -630,6 +629,7 @@ cmd = [
 ]
 opt = true
 
+# TODO: fix it
 # NOTE: cond = false now
 #[plugins."huez.nvim"]
 #git = "github:vague2k/huez.nvim"
@@ -663,6 +663,7 @@ colorscheme = [
 ]
 opt = true
 
+# TODO: fix it
 ## Can't use now
 #[plugins.catppuccin]
 #version = "0.1.0"
@@ -909,11 +910,6 @@ opt = true
 git = "github:m15a/nvim-srcerite"
 colorscheme = "srcerite"
 opt = true
-
-# touch nvim-srcerite
-#vim.g.srcerite_inverse_visual = true
-#vim.g.srcerite_inverse_search = false
-#vim.g.srcerite_inverse_match_paren = false
 
 #--- nightfall_themes
 #colorscheme = [
