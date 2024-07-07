@@ -1,5 +1,4 @@
----@type table
-local opts = {
+require("crates").setup({
     null_ls = {
         enabled = true,
     },
@@ -53,16 +52,4 @@ local opts = {
             loading = "  ",
         },
     },
-}
-
----@type LazySpec
-local spec = {
-    "saecki/crates.nvim",
-    --lazy = false,
-    event = { "BufRead Cargo.toml" },
-    dependencies = { "nvim-lua/plenary.nvim" },
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+})

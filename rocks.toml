@@ -934,3 +934,9 @@ opt = true
 git = "github:nastevens/vim-cargo-make"
 ft = "cargo-make"
 opt = true
+
+# dependencies = { "nvim-lua/plenary.nvim" }
+[plugins."crates.nvim"]
+git = "saecki/crates.nvim"
+event = ["BufRead Cargo.toml"]
+opt = true
