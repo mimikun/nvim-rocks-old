@@ -1213,3 +1213,9 @@ keys = [
     { lhs = "<space>f", desc = "vim.lsp.buf.format({ async = true })" },
 ]
 
+#dependencies = { "neovim/nvim-lspconfig" }
+[plugins."garbage-day.nvim"]
+git = "github:zeioth/garbage-day.nvim"
+event = "DeferredUIEnter"
+opt = true
+
