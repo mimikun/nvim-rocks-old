@@ -1,8 +1,0 @@
-#dependencies = {
-#    "williamboman/mason.nvim",
-#    "nvimtools/none-ls.nvim",
-#}
-[plugins."mason-null-ls.nvim"]
-git = "github:jay-babu/mason-null-ls.nvim"
-event = ["BufReadPre", "BufNewFile"]
-opt = true
