@@ -12,9 +12,9 @@ local cmds = {
 
 ---@type table
 local dependencies = {
-    "nvim-lua/plenary.nvim",
-    "rcarriga/nvim-notify",
-    "kkharji/sqlite.lua",
+    #"nvim-lua/plenary.nvim",
+    #"rcarriga/nvim-notify",
+    #"kkharji/sqlite.lua",
 }
 
 ---@type LazySpec
