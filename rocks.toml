@@ -1101,5 +1101,22 @@ opt = true
 #cmd = "Copilot"
 #opt = true
 
-[plugins."chatgpt.nvim"]
-version = "scm"
+# dependencies = {
+#     "MunifTanjim/nui.nvim",
+#     "nvim-lua/plenary.nvim",
+#     "folke/trouble.nvim",
+#     "nvim-telescope/telescope.nvim",
+# }
+# cond = require("core.settings").use_ai_assistant
+# NOTE: cond = false now
+#[plugins."chatgpt.nvim"]
+#version = "scm"
+#cmd = [
+#    "ChatGPT",
+#    "ChatGPTActAs",
+#    "ChatGPTEditWithInstructions",
+#    "ChatGPTRun",
+#]
+#event = "DeferredUIEnter"
+#opt = true
+
