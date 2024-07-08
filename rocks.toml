@@ -1427,3 +1427,26 @@ opt = true
 git = "github:dharmx/telescope-media.nvim"
 opt = true
 
+# Enable Pure-Linux and macOS only.
+#is_linux_or_macos = (not global.is_windows) and not global.is_wsl
+# Enable has `devpod` command
+#has_devpod = (1 == vim.fn.executable("devpod")) and true or false
+#cond = is_linux_or_macos and has_devpod
+# NOTE: cond = false
+#dependencies = {
+#    "nvim-lua/plenary.nvim",
+#    "MunifTanjim/nui.nvim",
+#    "nvim-telescope/telescope.nvim",
+#}
+#[plugins."remote-nvim.nvim"]
+#git = "github:amitds1997/remote-nvim.nvim"
+#cmd = [
+#    "RemoteStart",
+#    "RemoteStop",
+#    "RemoteInfo",
+#    "RemoteCleanup",
+#    "RemoteConfigDel",
+#    "RemoteLog",
+#]
+#opt = true
+
