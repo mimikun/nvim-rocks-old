@@ -86,6 +86,9 @@ tree-sitter-vue = "scm"
 tree-sitter-yaml = "scm"
 tree-sitter-zig = "scm"
 tree-sitter-just = "scm"
+"telescope-undo.nvim" = "scm"
+"telescope-frecency.nvim" = "scm"
+"telescope-file-browser.nvim" = "scm"
 ## NOTE: Linux or WSL only
 #tree-sitter-ocaml = "scm"
 #tree-sitter-ocaml_interface = "scm"
@@ -1401,5 +1404,25 @@ keys = [
     { lhs = "fc", desc = "Open git-commit log search" },
     { lhs = "fh", desc = "Open helptags search" },
 ]
+opt = true
+
+[plugins."telescope-zoxide"]
+git = "github:jvgrootveld/telescope-zoxide"
+opt = true
+
+[plugins."telescope-glyph.nvim"]
+git = "github:ghassan0/telescope-glyph.nvim"
+opt = true
+
+[plugins."telescope-emoji.nvim"]
+git = "github:xiyaowong/telescope-emoji.nvim"
+opt = true
+
+[plugins."telescope-egrepify.nvim"]
+git = "github:fdschmidt93/telescope-egrepify.nvim"
+opt = true
+
+[plugins."telescope-media.nvim"]
+git = "github:dharmx/telescope-media.nvim"
 opt = true
 
