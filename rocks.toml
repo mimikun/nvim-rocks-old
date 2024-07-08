@@ -326,6 +326,7 @@ opt = true
 [plugins."template.nvim"]
 git = "github:nvimdev/template.nvim"
 cmd = "Template"
+opt = true
 
 [plugins."typos.nvim"]
 git = "github:poljar/typos.nvim"
@@ -369,16 +370,6 @@ version = "2.10.0"
 cmd = "Oil"
 event = "DeferredUIEnter"
 opt = true
-
-[plugins."oil-git-status.nvim"]
-git = "github:refractalize/oil-git-status.nvim"
-
-# TODO: fix it
-[bundles.oil]
-items = [
-    "oil.nvim",
-    "oil-git-status.nvim",
-]
 
 # TODO: fix it
 ## NOTE: cond = false now
@@ -1219,3 +1210,159 @@ git = "github:zeioth/garbage-day.nvim"
 event = "DeferredUIEnter"
 opt = true
 
+#cond = require("core.settings").use_ai_assistant
+# NOTE: cond = false
+#[plugins.nvim-llama]
+#git = "github:jpmcb/nvim-llama"
+#cmd = "Llama"
+#opt = true
+
+#dependencies = { "neovim/nvim-lspconfig" }
+[plugins.nvim-navic]
+version = "scm"
+opt = true
+
+#dependencies = {
+#    "neovim/nvim-lspconfig",
+#    "SmiteshP/nvim-navic",
+#    "MunifTanjim/nui.nvim",
+#    "numToStr/Comment.nvim",
+#    "nvim-telescope/telescope.nvim",
+#}
+[plugins.nvim-navbuddy]
+git = "github:SmiteshP/nvim-navbuddy"
+cmd = "Navbuddy"
+opt = true
+
+#dependencies = { "nvim-lua/plenary.nvim" }
+#cond = require("core.settings").use_ai_assistant
+# NOTE: cond = false
+#[plugins."ollama.nvim"]
+#git = "github:nomnivore/ollama.nvim"
+#cmd = [
+#    "Ollama",
+#    "OllamaModel",
+#    "OllamaServe",
+#    "OllamaServeStop",
+#]
+#keys = [
+#    { lhs = "<leader>oo", desc = "ollama prompt" },
+#    { lhs = "<leader>oG", desc = "ollama Generate Code" },
+#]
+#opt = true
+
+[plugins."surround-ui.nvim"]
+git = "github:roobert/surround-ui.nvim"
+opt = true
+
+#dependencies = {
+#    "roobert/surround-ui.nvim",
+#    "folke/which-key.nvim",
+#}
+[plugins.nvim-surround]
+version = "2.1.5"
+event = "DeferredUIEnter"
+opt = true
+
+#dependencies = "nvim-lua/plenary.nvim"
+[plugins."nvim-tree-preview.lua"]
+git = "github:b0o/nvim-tree-preview.lua"
+# WORKAROUND: HEAD is broken
+rev = "e968df027d86797556e9bf5f1d5ffca87045150d"
+opt = true
+
+#dependencies = {
+#    "nvim-tree/nvim-web-devicons",
+#    "nvim-lua/plenary.nvim",
+#    -- WORKAROUND: HEAD is broken
+#    { "b0o/nvim-tree-preview.lua", commit = "e968df027d86797556e9bf5f1d5ffca87045150d"},
+#}
+[plugins."nvim-tree.lua"]
+version = "1.4.0"
+keys = [
+    { lhs = "<C-n>", desc = "Toggle NvimTree" },
+]
+cmd = [
+    "NvimTreeOpen",
+    "NvimTreeClose",
+    "NvimTreeToggle",
+    "NvimTreeFocus",
+    "NvimTreeRefresh",
+    "NvimTreeFindFile",
+    "NvimTreeFindFileToggle",
+    "NvimTreeClipboard",
+    "NvimTreeResize",
+    "NvimTreeCollapse",
+    "NvimTreeCollapseKeepBuffers",
+    "NvimTreeHiTest",
+]
+opt = true
+
+[plugins."mkdir.nvim"]
+git = "github:jghauser/mkdir.nvim"
+keys = [
+    { lhs = "w", mode = "c", desc = "You can mkdir -p" },
+]
+opt = true
+
+#dependencies = {
+#    "nvim-lua/plenary.nvim",
+#    "nvim-telescope/telescope.nvim",
+#}
+# NOTE: NEED IT:
+# set -Ux OBSIDIAN_REST_API_KEY=<YOUR_API_KEY>
+#cond = vim.env.OBSIDIAN_REST_API_KEY ~= nil
+# NOTE: cond = false
+#[plugins."obsidian-bridge.nvim"]
+#git = "github:oflisback/obsidian-bridge.nvim"
+#cmd = [
+#    "ObsidianBridgeDailyNote",
+#    "ObsidianBridgeOpenGraph",
+#    "ObsidianBridgeOpenVaultMenu",
+#    "ObsidianBridgeTelescopeCommand",
+#]
+#event = ["BufReadPre *.md", "BufNewFile *.md"]
+#opt = true
+
+#dependencies = {
+#    "nvim-lua/plenary.nvim",
+#    "hrsh7th/nvim-cmp",
+#    "nvim-telescope/telescope.nvim",
+#    "nvim-treesitter/nvim-treesitter",
+#}
+[plugins."obsidian.nvim"]
+version = "3.8.1"
+#vault_path = vim.fn.expand("$obsidian_vault_path")
+#event = {
+#    "BufReadPre " .. vault_path .. "/**.md",
+#    "BufNewFile " .. vault_path .. "/**.md",
+#}
+cmd = [
+    "ObsidianOpen",
+    "ObsidianNew",
+    "ObsidianQuickSwitch",
+    "ObsidianFollowLink",
+    "ObsidianBacklinks",
+    "ObsidianTags",
+    "ObsidianToday",
+    "ObsidianYesterday",
+    "ObsidianTomorrow",
+    "ObsidianDailies",
+    "ObsidianTemplate",
+    "ObsidianSearch",
+    "ObsidianLink",
+    "ObsidianLinkNew",
+    "ObsidianLinks",
+    "ObsidianExtractNote",
+    "ObsidianWorkspace",
+    "ObsidianPasteImg",
+    "ObsidianRename",
+    "ObsidianCheck",
+    "ObsidianToggleCheckbox",
+]
+opt = true
+
+[plugins."themery.nvim"]
+git = "github:zaldih/themery.nvim"
+cmd = "Themery"
+opt = true

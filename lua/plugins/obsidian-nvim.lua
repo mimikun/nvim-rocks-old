@@ -1,5 +1,3 @@
-local M = {}
-
 ---@type table
 local vaults = {
     {
@@ -161,8 +159,7 @@ local substitutions = {
     end,
 }
 
----@type table
-M.opts = {
+require("obsidian").setup({
     workspaces = vaults,
 
     -- Default save location for newly created notes
@@ -259,6 +256,4 @@ M.opts = {
     attachments = {
         img_folder = "998_Attachments",
     },
-}
-
-return M
+})

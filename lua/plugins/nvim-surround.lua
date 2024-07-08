@@ -1,11 +1,4 @@
----@type table
-local dependencies = {
-    "roobert/surround-ui.nvim",
-    "folke/which-key.nvim",
-}
-
----@type table
-local surround_opts = {
+require("nvim-surround").setup({
     -- Defines plugin keymaps
     keymaps = {
         insert = "<C-g>s",
@@ -43,25 +36,4 @@ local surround_opts = {
             vim.cmd(string.format("silent normal! %dG=%dG", start, stop))
         end
     end,
-}
-
----@type table
-local surround_ui_opts = {
-    root_key = "S",
-}
-
----@type LazySpec
-local spec = {
-    "kylechui/nvim-surround",
-    version = "*",
-    lazy = false,
-    event = "VeryLazy",
-    dependencies = dependencies,
-    config = function()
-        require("nvim-surround").setup(surround_opts)
-        require("surround-ui").setup(surround_ui_opts)
-    end,
-    --cond = false,
-}
-
-return spec
+})

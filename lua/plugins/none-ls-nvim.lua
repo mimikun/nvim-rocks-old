@@ -1,9 +1,9 @@
 ---@type table[]
 local base_sources = {
-    windows = require("sources.null-ls").windows,
-    linux = require("sources.null-ls").linux,
-    minimal = require("sources.null-ls").minimal,
-    full = require("sources.null-ls").full,
+    windows = require("options.null-ls").windows,
+    linux = require("options.null-ls").linux,
+    minimal = require("options.null-ls").minimal,
+    full = require("options.null-ls").full,
 }
 
 ---@type table
