@@ -13,4 +13,5 @@ strat = "strat"
 [files]
 extend-exclude = [
   "plugin-samples",
+  "lua/options/telescope-ext/media.lua",
 ]
