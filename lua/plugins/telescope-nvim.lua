@@ -9,7 +9,7 @@ local builtin = require("telescope.builtin")
 local themes = require("telescope.themes")
 
 telescope.setup({
-    extensions = require("plugins.telescope-ext.extensions"),
+    extensions = require("options.telescope-ext.extensions"),
 })
 
 if is_git then
@@ -55,7 +55,6 @@ telescope.load_extension("frecency")
 telescope.load_extension("smart_open")
 telescope.load_extension("glyph")
 telescope.load_extension("emoji")
-telescope.load_extension("lazy")
 telescope.load_extension("file_browser")
 telescope.load_extension("egrepify")
 telescope.load_extension("package_info")

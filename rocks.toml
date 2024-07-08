@@ -1373,7 +1373,6 @@ opt = true
 #    "danielfalk/smart-open.nvim",
 #    "ghassan0/telescope-glyph.nvim",
 #    "xiyaowong/telescope-emoji.nvim",
-#    "tsakirist/telescope-lazy.nvim",
 #    "fdschmidt93/telescope-egrepify.nvim",
 #    "nvim-telescope/telescope-file-browser.nvim",
 #    "vuki656/package-info.nvim",
