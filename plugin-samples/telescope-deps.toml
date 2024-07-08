@@ -1,9 +1,5 @@
-# TODO: Need setup func
-#    "danielfalk/smart-open.nvim"
 # TODO: Telescope exts
 #    "tiagovla/scope.nvim"
 #    "nvim-lua/popup.nvim"
 #    "epwalsh/pomo.nvim"
 #    "vuki656/package-info.nvim"
-# TODO: Need build phase
-#    { "nvim-telescope/telescope-fzf-native.nvim", build = "make" }
