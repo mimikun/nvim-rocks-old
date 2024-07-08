@@ -1366,3 +1366,41 @@ opt = true
 git = "github:zaldih/themery.nvim"
 cmd = "Themery"
 opt = true
+
+#dependencies = {
+#    "nvim-lua/plenary.nvim",
+#    "nvim-telescope/telescope-frecency.nvim",
+#    "danielfalk/smart-open.nvim",
+#    "ghassan0/telescope-glyph.nvim",
+#    "xiyaowong/telescope-emoji.nvim",
+#    "tsakirist/telescope-lazy.nvim",
+#    "fdschmidt93/telescope-egrepify.nvim",
+#    "nvim-telescope/telescope-file-browser.nvim",
+#    "vuki656/package-info.nvim",
+#    "tiagovla/scope.nvim",
+#    "nvim-lua/popup.nvim",
+#    "jvgrootveld/telescope-zoxide",
+#    "debugloop/telescope-undo.nvim",
+#    "epwalsh/pomo.nvim",
+#    NOTE: Add fzf_sorter if not a Windows
+#    Very difficult to build fzf on Windows
+#    if not is_windows then
+#    { "nvim-telescope/telescope-fzf-native.nvim", build = "make" }
+#    "dharmx/telescope-media.nvim",
+#    end
+#}
+[plugins."telescope.nvim"]
+version = "scm"
+keys = [
+    { lhs = "<C-p>", desc = "Open file search" },
+    { lhs = "<C-g>", desc = "Open string search" },
+    # TODO: Fix which-key conflict error
+    { lhs = "fr", desc = "Open grep string search" },
+    { lhs = "fb", desc = "Open buffer search" },
+    { lhs = "fm", desc = "Open mark search" },
+    { lhs = "fo", desc = "Open file history search" },
+    { lhs = "fc", desc = "Open git-commit log search" },
+    { lhs = "fh", desc = "Open helptags search" },
+]
+opt = true
+
