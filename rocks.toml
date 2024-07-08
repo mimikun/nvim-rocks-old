@@ -1450,3 +1450,10 @@ opt = true
 #]
 #opt = true
 
+#dependencies = "kkharji/sqlite.lua"
+# NOTE: Very difficult to build fzf on Windows
+# if not require("core.global").is_windows then
+# "nvim-telescope/telescope-fzf-native.nvim", build = "make",
+[plugins."smart-open.nvim"]
+git = "github:danielfalk/smart-open.nvim"
+opt = true
