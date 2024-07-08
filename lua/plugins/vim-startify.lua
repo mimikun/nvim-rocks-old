@@ -75,8 +75,7 @@ vim.g.startify_use_env = 0
 vim.g.startify_session_autoload = 0
 vim.g.startify_session_before_save = {}
 vim.g.startify_session_delete_buffers = 1
-vim.g.startify_session_dir =
-    table.concat({ vim.fn.stdpath("data"), "session" }, require("core.global").path_sep)
+vim.g.startify_session_dir = table.concat({ vim.fn.stdpath("data"), "session" }, require("core.global").path_sep)
 vim.g.startify_session_number = 999
 vim.g.startify_session_persistence = 0
 vim.g.startify_session_remove_lines = {}
