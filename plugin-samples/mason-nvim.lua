@@ -32,7 +32,6 @@ local spec = {
     dependencies = dependencies,
     config = function()
         local lspconfig = require("lspconfig")
-        local configs = require("lspconfig.configs")
 
         local lsp_handlers = {
             function(server_name)
@@ -52,34 +51,10 @@ local spec = {
             end,
         }
 
-        if not configs.fish_lsp then
-            configs.fish_lsp = require("plugins.lsp.fish-lsp")
-        end
-
-        if not configs.aiscript_lsp then
-            configs.aiscript_lsp = require("plugins.lsp.aiscript-lsp")
-        end
-
-        require("mason").setup({
-            max_concurrent_installers = global.is_human_rights and 4 or 1,
-            ui = {
-                check_outdated_packages_on_open = true,
-                border = "rounded",
-                width = 0.88,
-                height = 0.8,
-                icons = {
-                    package_installed = icons.ui.Check,
-                    package_pending = icons.misc.Ghost,
-                    package_uninstalled = icons.kind.Close,
-                },
-            },
-        })
         require("mason-lspconfig").setup({
             ensure_installed = require("plugins.sources.servers").need_servers,
             handlers = lsp_handlers,
         })
-        lspconfig.fish_lsp.setup({})
-        lspconfig.aiscript_lsp.setup({})
         require("mason-nvim-dap").setup({
             ensure_installed = require("plugins.sources.dap").need_adapters,
             handlers = dap_handlers,
