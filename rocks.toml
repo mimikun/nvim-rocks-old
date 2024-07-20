@@ -90,6 +90,7 @@ tree-sitter-vue = "scm"
 tree-sitter-yaml = "scm"
 tree-sitter-zig = "scm"
 tree-sitter-just = "scm"
+# XXX: mason configs
 "mason.nvim" = "scm"
 ## NOTE: Linux or WSL only
 #tree-sitter-ocaml = "scm"
