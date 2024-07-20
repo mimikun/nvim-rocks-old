@@ -1,5 +1,8 @@
+-- Specifies where to install/use rocks.nvim
+local install_location = vim.fs.joinpath(vim.fn.stdpath("data"), "rocks")
+
 -- If rocks.nvim is not installed then install it!
-if not pcall(require, "rocks") then
+if not vim.uv.fs_stat(install_location) then
     local rocks_location = vim.fs.joinpath(vim.fn.stdpath("cache"), "rocks.nvim")
 
     if not vim.uv.fs_stat(rocks_location) then
@@ -20,9 +23,6 @@ if not pcall(require, "rocks") then
 
     vim.fn.delete(rocks_location, "rf")
 end
-
--- Specifies where to install/use rocks.nvim
-local install_location = vim.fs.joinpath(vim.fn.stdpath("data"), "rocks")
 
 -- Set up configuration options related to rocks.nvim (recommended to leave as default)
 local rocks_config = {
