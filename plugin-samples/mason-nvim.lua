@@ -17,8 +17,6 @@ local dependencies = {
     "williamboman/mason-lspconfig.nvim",
     "zapling/mason-lock.nvim",
     "b0o/schemastore.nvim",
-    "folke/neoconf.nvim",
-    { "folke/lazydev.nvim", ft = "lua" },
     "Bilal2453/luvit-meta",
     "justinsgithub/wezterm-types",
     "hrsh7th/cmp-nvim-lsp",
@@ -35,23 +33,6 @@ local spec = {
     config = function()
         local lspconfig = require("lspconfig")
         local configs = require("lspconfig.configs")
-
-        require("neoconf").setup({})
-        require("lazydev").setup({
-            runtime = vim.env.VIMRUNTIME,
-            library = {
-                "lazy.nvim",
-                { path = "luvit-meta/library", words = { "vim%.uv" } },
-                { path = "wezterm-types", mods = { "wezterm" } },
-            },
-            integrations = {
-                lspconfig = true,
-                cmp = true,
-            },
-            enabled = function(root_dir)
-                return not vim.uv.fs_stat(root_dir .. "/.luarc.json")
-            end,
-        })
 
         local lsp_handlers = {
             function(server_name)
