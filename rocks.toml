@@ -984,7 +984,7 @@ opt = true
 #    "hrsh7th/nvim-cmp",
 #}
 [plugins."noice.nvim"]
-version = "4.4.0"
+version = "4.4.3"
 event = "DeferredUIEnter"
 opt = true
 
